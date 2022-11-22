@@ -1,6 +1,26 @@
-export function sortGameData(games, key) {
+export function parseGames({ data }){
+    let games = []
+    data.forEach((e) => {
+        const game = {
+        id: e.id,
+        year: (e.date.substring(0,4)),
+        month: (e.date.substring(5,7)),
+        day: (e.date.substring(8,10)),
+        home: e.home_team.full_name,
+        homeScore: e.home_team_score,
+        period: (e.period == 4 && e.status == "Final" ? 5 : e.period),
+        season: e.season,
+        status: e.status,
+        time: e.time,
+        visitor: e.visitor_team.full_name,
+        visitorScore: e.visitor_team_score};
+        games.push(game);
+      });
+    return games;
+}
 
-    // initial load, so bypass the sorting logic enitrely  
+
+export function sortGameData(games, key) {
     const sorted = games.sort((a, b) => {
         if (a.year > b.year) {
             return key === "newest" ? 1 : -1;
