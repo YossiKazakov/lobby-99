@@ -1,16 +1,12 @@
 :root {
-  --font-family: "SF Pro Text",
-    "SF Pro Icons",
-    "Helvetica Neue",
-    "Helvetica",
-    "Arial",
+  --font-family: "Courier New",
     sans-serif;
-  --deep-blue: rgb(49, 11, 218);
-  --deep-red: rgb(239, 6, 72);
-  --white: #fbfafa;
-  --charcoal: rgb(45, 43, 43);
+  --black: #000000;
+  --deep-red: (255, 89, 0, 0.975);
+  --orangey: #ffa600;
+  --charcoal: #000000;
   --layout-guide-item: rgba(255, 89, 0, 0.975);
-  --layout-guide-content: rgb(0, 183, 255);
+  --layout-guide-content: rgb(255, 89, 0, 0.975);
 }
 
 /* start design helpers */
@@ -77,11 +73,12 @@ body {
   font-family: var(--font-family);
   margin: 0;
   padding: 0;
-  color: var(--charcoal);
+  background-color: var(--charcoal);
+  color: var(--orangey);
 }
 
 a {
-  color: var(--deep-blue);
+  color: var(--charcoal);
 }
 
 input,
@@ -113,13 +110,13 @@ form>* {
 
 #navbar {
   display: flex;
-  background-color: var(--deep-blue);
-  color: var(--white);
+  background-color: var(--black);
+  color: var(--orangey);
   border-bottom: 4px solid var(--deep-red);
 }
 
 #navbar a {
-  color: var(--white);
+  color: var(--orangey);
 }
 
 .navbar-items {
@@ -144,15 +141,15 @@ form>* {
 }
 
 .navbar-logo a {
-  color: var(--white);
+  color: var(--orangey);
   text-decoration: none;
 }
 
 #footer {
   display: flex;
   margin-top: auto;
-  background-color: var(--deep-blue);
-  color: var(--white);
+  background-color: var(--charcoal);
+  color: var(--orangey);
   height: 200px;
   border-top: 4px solid var(--deep-red);
 }

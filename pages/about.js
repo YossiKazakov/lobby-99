@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="row">
       <div className="item">
         <div className="content">
-          This app is all about Australian Football.
+          This app shows live score, resultes and fixtures of the 2022/2023 season of the NBA
         </div>
       </div>
     </div>
