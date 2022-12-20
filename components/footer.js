@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="row">
           <div className="item">
             <div className="content">
-              &copy; OmriO19 HUJI 2022
+              
             </div>
           </div>
         </div>

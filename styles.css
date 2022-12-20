@@ -1,78 +1,17 @@
 :root {
-  --font-family: "Courier New",
+  --font-family:
     sans-serif;
-  --black: #000000;
-  --deep-red: rgba(34, 34, 34, 0.975);
-  --orangey: #ffa600;
-  --charcoal: #000000;
-  --layout-guide-item: rgba(255, 89, 0, 0.975);
-  --layout-guide-content: rgb(255, 89, 0, 0.975);
+  --majorelle: #6050dc;
+  --white: #ffffff;
 }
-
-/* start design helpers */
-
-/* .item {
-  border: 1px dotted var(--layout-guide-item);
-}
-
-.content {
-  border: 1px dotted var(--layout-guide-content);
-}
-
-.card-content {
-  border: 1px solid var(--layout-guide-content);
-} */
-
-/* end design helpers */
-
 .container {
   width: 100%;
   margin: 0 auto;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.item {
-  box-sizing: border-box;
-  flex-grow: 0;
-  flex-basis: 100%;
-  justify-content: center;
-  gap: 5px;
-}
-.item.control {
-  width: 50%;
-  margin: 5px auto;
-}
-#data-sort, #data-filter{
-  background-color: #000000;
-  color: #ffa600;
-  font-family: "Courier New", sans-serif;
-  font-weight: bold;
-  border: 1px dotted #ffa600;
-  font-size: 20px;
-}
-#form-name, #form-email, #form-comment, #form-button{
-  background-color: #000000;
-  color: #ffa600;
-  font-family: "Courier New", sans-serif;
-  font-weight: bold;
-  border: 1px dotted #ffa600;
-  font-size: 20px;
-}
-#data-sort:hover, #data-filter:hover, #form-button:hover {
-  background-color: #ffa600;
-  color: black;
-  cursor: pointer;
-}
-
-.item.card:hover{
-  background-color: var(--orangey);
-  color: var(--black);
-  cursor: pointer;
-  margin: 5px auto;
+  padding: 10px;
 }
 .content {
   flex-grow: 0;
@@ -107,25 +46,10 @@ body {
   font-family: var(--font-family);
   margin: 0;
   padding: 0;
-  background-color: var(--charcoal);
-  color: var(--orangey);
+  background-color: var(--majorelle);
+  color: var(--white);
 }
 
-a {
-  color: var(--charcoal);
-}
-
-input,
-textarea,
-button,
-select {
-  display: block;
-  height: 2rem;
-  width: 100%;
-  margin: 0;
-  padding: 0.25rem;
-  border: 1px solid var(--orangey);
-}
 
 textarea {
   height: 4rem;
@@ -135,55 +59,20 @@ button {
   height: 2.5rem;
 }
 
-form>* {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  font-family: var(--font-family);
-}
-
 #navbar {
   display: flex;
-  background-color: var(--black);
-  color: var(--orangey);
-  /* border-bottom: 4px solid var(--deep-red); */
+  background-color: var(--majorelle);
+  color: var(--white);
+  border-bottom: 0.1px solid var(--white);
 }
-
-#navbar a {
-  color: var(--orangey);
-}
-
 .navbar-items {
-  justify-content: space-between;
+  justify-content: left;
 }
-
-.navbar-menu ul {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0;
-  list-style-type: none;
-}
-
-.navbar-menu li {
-  margin: 0 0.5rem;
-}
-
-.navbar-logo {
-  display: flex;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.navbar-logo a {
-  color: var(--orangey);
-  text-decoration: none;
-}
-
 #footer {
   display: flex;
   margin-top: auto;
-  background-color: var(--charcoal);
-  color: var(--orangey);
+  background-color: var(--majorelle);
+  color: var(--white);
   height: 200px;
-  border-top: 0.1px solid var(--orangey);
+  border-top: 0.1px solid var(--white);
 }
