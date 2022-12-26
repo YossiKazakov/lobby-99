@@ -1,6 +1,7 @@
 export function parseData({ data }){
+    console.log(data);
     let members = []
-    data.forEach((e) => {
+    data.map((e) => {
         const member = {
         id: e.id,
         name: e.name};

@@ -1,25 +1,24 @@
 
 import { useState } from "react";
 import Message from "../components/message";
-import { useApiData } from "../hooks/data";
+import { useData } from "../hooks/data";
 import { parseData } from "../utils";
-import Main from "../components/main";
+import MemberList from "../components/member-list";
 // Our main page. Here we are loading data "on the client"
 // And showing some loading screen(s) while waiting for the data to be ready
 export default function IndexPage() {
-    
-  const { data, isLoading, isError } = useApiData();
-
+  console.log("~ start ~");
+  const { data, isLoading, isError } =  useData();
   if (isLoading) return <Message content="Loading..." />
   if (isError) return <Message content="An error occured..." />
-  if (!data) return <Message content="No data could be loaded..." />
+  if (!data) return <Message content= "No data could be loaded..." />
 
+  console.log(data);
 
-  const lobbyMember = parseData(data);
 
   return (
-    <Main>
-      lobbyMember
-    </Main>
+    <>
+    <MemberList members={data} />
+    </>
   )
 }
