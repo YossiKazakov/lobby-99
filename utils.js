@@ -9,3 +9,9 @@ export function parseData({ data }){
     });
     return members;
 }
+
+export function calculateTime({ join_at })
+{
+
+    return years, months, days;
+}

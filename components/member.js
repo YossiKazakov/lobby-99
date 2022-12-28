@@ -2,14 +2,13 @@ import { useInView } from 'react-intersection-observer';
 import styles from './member.module.css';
 import Image from 'next/image';
 import maintanceImage from '../under_maintenance.png'
-
+import Share from './share.js'
 
 export default function Member({ member }) { // Make component for every refference
     const { ref: ref1, inView: elementIsVisible1 } = useInView({triggerOnce: true});
     const { ref: ref2, inView: elementIsVisible2 } = useInView({triggerOnce: true});
     const { ref: ref3, inView: elementIsVisible3 } = useInView({triggerOnce: true});
     const { ref: ref4, inView: elementIsVisible4 } = useInView({triggerOnce: true});
-    const num = 6;
 
 
     return (<>
@@ -49,5 +48,7 @@ export default function Member({ member }) { // Make component for every reffere
                 </div>
             </div>
         </div>
+
+        <Share/>
 
     </>)}
