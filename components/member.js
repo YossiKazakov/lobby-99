@@ -4,7 +4,7 @@ import Image from 'next/image';
 import maintanceImage from '../under_maintenance.png'
 
 
-export default function Member({ member }) {
+export default function Member({ member }) { // Make component for every refference
     const { ref: ref1, inView: elementIsVisible1 } = useInView();
     const { ref: ref2, inView: elementIsVisible2 } = useInView();
     const { ref: ref3, inView: elementIsVisible3 } = useInView();
