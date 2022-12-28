@@ -23,7 +23,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params: { id } }) => {
+export const getStaticProps = async ({ params: { id } }) => { // Maybe hash the id
   const { data: member } = await client.from(MEMBERS_TABLE_NAME)
     .select("*")
     .eq("id", id)
