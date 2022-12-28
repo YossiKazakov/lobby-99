@@ -9,8 +9,7 @@ export default function Member({ member }) { // Make component for every reffere
     const { ref: ref2, inView: elementIsVisible2 } = useInView({triggerOnce: true});
     const { ref: ref3, inView: elementIsVisible3 } = useInView({triggerOnce: true});
     const { ref: ref4, inView: elementIsVisible4 } = useInView({triggerOnce: true});
-    const num = 5
-    
+
 
 
     return (<>
