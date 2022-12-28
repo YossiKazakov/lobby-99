@@ -1,5 +1,5 @@
 :root {
-  --font-family:
+  --font-family: 'Open Sans',
     sans-serif;
   --majorelle: #6050dc;
   --white: #ffffff;
@@ -20,7 +20,12 @@
   padding: 10px;
   text-align: right;
 }
-
+.left-content {
+  text-align: left;
+}
+.center-content {
+  text-align: center;
+}
 /* adjustments for medium screens, like some tablets or landscape on a mobile */
 @media (min-width: 576px) {}
 
@@ -44,10 +49,15 @@
 
 body {
   font-family: var(--font-family);
-  margin: 0;
   padding: 0;
-  background-color: var(--majorelle);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--majorelle);
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: +.05em;
+  margin: 0 0 40px;
 }
 
 
@@ -61,18 +71,20 @@ button {
 
 #navbar {
   display: flex;
-  background-color: var(--majorelle);
-  color: var(--white);
-  border-bottom: 0.1px solid var(--white);
+  background-color: var(--white);
+  color: var(--majorelle);
+  /* border-bottom: 0.1px solid var(--majorelle); */
 }
 .navbar-items {
   justify-content: left;
 }
+/* -- Footer styles -- */
 #footer {
   display: flex;
   margin-top: auto;
-  background-color: var(--majorelle);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--majorelle);
   height: 200px;
-  border-top: 0.1px solid var(--white);
+  /* border-top: 0.1px solid var(--majorelle); */
 }
+
