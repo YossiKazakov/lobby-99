@@ -30,25 +30,21 @@ export default function Member({ member }) { // Make component for every reffere
         </div>
 
         <div ref={ref3} className="row">
-            <div className="content">
-                <div className="left-content">
+                <div className="content left">
                     <span className={`${styles.rocket} ${elementIsVisible3 ? styles.animateRocket : ''}`}>
                     🚀
                     </span>
                 </div>
-            </div>
         </div>
 
         <div ref={ref4} className="row">
-            <div className="content">
-                <div className="center-content">
+                <div className="content center">
                     <span className={`${styles.hidden} ${elementIsVisible4 ? styles.show : ''}`}> 
                         <Image id="under_maintenance" src={maintanceImage} alt="under maintenance" width={600} height={500}/>
                     </span>
+
+                    <Share/>
+
                 </div>
-            </div>
         </div>
-
-        <Share/>
-
     </>)}

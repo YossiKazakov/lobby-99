@@ -17,13 +17,13 @@
   flex-grow: 0;
   flex-basis: 100%;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   text-align: right;
 }
-.left-content {
+.left {
   text-align: left;
 }
-.center-content {
+.center {
   text-align: center;
 }
 /* adjustments for medium screens, like some tablets or landscape on a mobile
