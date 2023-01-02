@@ -3,8 +3,9 @@
     sans-serif;
   --majorelle: #6050dc;
   --white: #ffffff;
+  --black: #000000;
 }
-.container {
+/* .container {
   width: 100%;
   margin: 0 auto;
 }
@@ -25,7 +26,7 @@
 }
 .center {
   text-align: center;
-}
+} */
 /* adjustments for medium screens, like some tablets or landscape on a mobile
 @media (min-width: 576px) {}
 
@@ -48,9 +49,12 @@
 } */
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: var(--font-family);
   padding: 0;
-  background-color: var(--white);
+  background-color: var(--black);
   color: var(--majorelle);
   flex-wrap: wrap;
   font-size: 1.5rem;
@@ -58,15 +62,18 @@ body {
   font-weight: 500;
   letter-spacing: +.05em;
   margin: 0 0 40px;
+  text-align: right;
 }
 
-
-textarea {
-  height: 4rem;
+/* Hide scrollbar for Chrome, Safari and Opera */
+.body::-webkit-scrollbar {
+  display: none;
 }
 
-button {
-  height: 2.5rem;
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #navbar {
