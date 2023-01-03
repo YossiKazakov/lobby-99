@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import styles from './member.module.css';
+import styles from '../styles/member.module.css';
 import Image from 'next/image';
 import maintanceImage from '../under_maintenance.png'
 import Share from './share';

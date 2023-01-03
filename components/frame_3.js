@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import styles from './member.module.css';
+import styles from '../styles/member.module.css';
 
 export default function Frame3() {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});

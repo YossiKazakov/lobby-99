@@ -29,7 +29,6 @@
   min-height: 100vh;
   min-width: 100vw;
 
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +36,7 @@
   overflow-y: scroll;
   scroll-snap-align: center;
 
-  border-top: 0.1px solid var(--majorelle);
+  /* border-top: 0.1px solid var(--majorelle); */
 }
 
 .hidden {
