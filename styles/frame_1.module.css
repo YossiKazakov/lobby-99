@@ -29,7 +29,7 @@
     left: 42px;
     top: 201px;
 
-    font-family:serif; /* not matching the figma */
+    font-family: serif; /* not matching the figma */
     font-style: normal;
     font-weight: 400;
     font-size: 90px;
@@ -83,6 +83,88 @@
     background: #FF6D46;
     border-radius: 50%;
 }
+
+.group43{
+    position: absolute;
+    width: 381.3px;
+    height: 381.13px;
+    left: 103px;
+    top: 313px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.happy{
+    position: absolute;
+    width: 190px;
+    height: 81px;
+    left: 65px;
+    top: 200px;
+    font-family: serif; /* not matching the figma */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 67%;
+    /* or 27px */
+    
+    text-align: center;
+    letter-spacing: 0.065em;
+    
+    color: #E7FF53;
+}
+.group35{
+    position: absolute;
+    width: 381.3px;
+    height: 381.13px;
+    left: -50px;
+    top: 350px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.elipse123{
+    box-sizing: border-box;
+    position: absolute;
+    width: 160px;
+    height: 79px;
+    left: -76.35px;
+    top: 539.87px;
+    border: 7px solid #6249FF;
+    border-radius: 50%;
+}
+
+.elipse124{
+    box-sizing: border-box;
+    position: absolute;
+    width: 18px;
+    height: 38px;
+    left: -37.35px;
+    top: 489.07px;
+    background: #6249FF;
+
+    border-radius: 25%;
+}
+
+.elipse122{
+    box-sizing: border-box;
+    position: absolute;
+    width: 18px;
+    height: 38px;
+    left: 22.65px;
+    top: 489.07px;
+    background: #6249FF;
+
+    border-radius: 25%;
+}
+
+
 
 .hidden {
     opacity: 0;

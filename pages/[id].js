@@ -11,12 +11,16 @@ const MemberDetails = ({ member }) => {
 };
 
 export const getStaticPaths = async () => {
+  // const paths = {params: {id: "",},};
   const { data: members } = await client.from(MEMBERS_TABLE_NAME).select("id");
-  const paths = members.map(({ id }) => ({
-    params: {
-      id: id.toString(),
-    },
-  }));
+  // if (members != null){
+    const paths = members.map(({ id }) => ({
+      params: {
+        id: id.toString(),
+      },
+    }));
+  // }
+  console.log(paths)
   return {
     paths,
     fallback: false,
