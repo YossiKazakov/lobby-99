@@ -11,7 +11,7 @@ const MemberDetails = ({ member }) => {
 };
 
 export const getStaticPaths = async () => {
-  const paths = [ // ***** default in case having troubles reading from the supabase
+  let paths = [ // ***** default in case having troubles reading from the supabase
     {
       params: {
         id: '1'
@@ -37,7 +37,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { id } }) => { // Maybe hash the id
-  const member = {'id': 1, 'name': 'עמית'}; // ****** default in case having troubles reading from the supabase  
+  let member = {'id': 1, 'name': 'עמית'}; // ****** default in case having troubles reading from the supabase  
 
   const { data } = await client.from(MEMBERS_TABLE_NAME)
     .select("*")
