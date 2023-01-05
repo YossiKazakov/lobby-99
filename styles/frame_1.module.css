@@ -1,174 +1,40 @@
 .container{
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
     height: 100vh;
     width: 100vw;
     background: #6249FF;
     display: flex;
     flex-shrink: 0;
-    /* border: #FF6D46 solid 10px; */
+    border: #FF6D46 dashed 4px;
 }
 
-.group40{
+.smiley1{
     position: absolute;
-    width: 381.3px;
-    height: 381.13px;
-    left: 0px;
-    top: 41px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+    left: 84px;
+    top: 600px;
 }
 
-.name{
+.text{
     position: absolute;
-    width: 223px;
+    max-width: 223px;
     height: 50px;
-    left: 42px;
-    top: 201px;
+    left: 41px;
+    top: 214px;
 
-    font-family: serif; /* not matching the figma */
+    font-family: 'CosHalavDfus';
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
-    line-height: 64px;
+    /* font-size: 55px; */
+    line-height: 39px;
     text-align: center;
-    letter-spacing: 0.115em;
+    letter-spacing: 0.125em;
 
     color: #6249FF;
-}
-
-.rectangle138{
-    position: absolute;
-    width: 222px;
-    height: 72px;
-    left: 43px;
-    top: 200px;
-
     background: #FF6D46;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.elipse121{
-    box-sizing: border-box;
-    position: absolute;
-    width: 208px;
-    height: 202px;
-    left: 50px;
-    top: 129px;
-    border: 7px solid #6249FF;
-    border-radius: 50%;
-}
-
-.elipse120{
-    box-sizing: border-box;
-    position: absolute;
-    width: 254px;
-    height: 246px;
-    left: 27px;
-    top: 107px;
-    border: 7px solid #6249FF;
-    border-radius: 50%;
-}
-
-/* not matching the figma */
-.vector{
-    box-sizing: border-box;
-    position: absolute;
-    width: 268px;
-    height: 268px;
-    left: 22px;
-    top: 97px;
-    background: #FF6D46;
-    border-radius: 50%;
-}
-
-.group43{
-    position: absolute;
-    width: 381.3px;
-    height: 381.13px;
-    right: -100px;
-    top: 308px;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.happy{
-    position: absolute;
-    width: 190px;
-    height: 81px;
-    left: 65px;
-    top: 200px;
-    font-family: serif; /* not matching the figma */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 67%;
-    /* or 27px */
-    
-    text-align: center;
-    letter-spacing: 0.065em;
-    
-    color: #E7FF53;
-}
-.group35{
-    position: absolute;
-    width: 381.3px;
-    height: 381.13px;
-    left: -165px;
-    top: 350px;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-.elipse123{ /* creepy smile */
-    box-sizing: border-box;
-    position: absolute;
-    width: 160px;
-    height: 80px;
-    left: 90px;
-    top: 210px;
-    border: 7px solid #6249FF;
-    border-bottom-left-radius: 80px;  /* 100px of height + 10px of border */
-    border-bottom-right-radius: 80px;
-    border-right: 0;
-    border-left: 0;
-    border-top: 0;
-    /* border-radius: 100%; */
-}
-
-/* .elipse124{
-    box-sizing: border-box;
-    position: absolute;
-    width: 18px;
-    height: 38px;
-    left: 50px;
-    top: 100px;
-    background: #6249FF;
-
-    border-radius: 25%;
-} */
-
-.elipse122{
-    position: absolute;
-    width: 18px;
-    height: 38px;
-    left: 180px;
-    top: 180px;
-    
-    background: #6249FF;
-
-    border-radius: 20%;
-}
 
 
 
