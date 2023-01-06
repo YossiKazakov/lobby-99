@@ -1,9 +1,13 @@
 import { useInView } from 'react-intersection-observer';
 import { AutoTextSize } from 'auto-text-size'
 import Image from 'next/image';
+
 import textCircle from '../images/frame-1/text-circle.svg';
 import happyCircle from '../images/frame-1/happy-circle.svg';
-import smileyCircle from '../images/frame-1/smiley-circle.svg';
+import smiley1 from '../images/frame-1/smiley1.svg';
+import smiley2 from '../images/frame-1/smiley2.svg';
+import smiley3 from '../images/frame-1/smiley3.svg';
+import redBottom from '../images/frame-1/red-bottom.svg';
 
 import styles from '../styles/frame_1.module.css';
 
@@ -14,17 +18,18 @@ export default function Frame1({ name }) {
 
     return (
         <div ref={ref} className={styles.container}>
-            <Image className={styles.smiley1} src={smileyCircle} alt="smiley" width={181} height={181}/>
-            {/* <Image id="smiley2" src={smileyCircle} alt="smiley" width={381} height={381}/>
-            <Image id="smiley3" src={smileyCircle} alt="smiley" width={381} height={381}/> */}
-            {/* <Image id="happy" src={happyCircle} alt="happy to see you" width={381} height={381}/>
-
-            <Image id="text" src={textCircle} alt={name} width={381} height={381}/> */}
-
-            {/* <div className={styles.text}>
-                        <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={100} fontSizePrecisionPx={0.1}>
-                            דן
-                        </AutoTextSize>
-            </div> */}
+            <div className={`${styles.hidden} ${elementIsVisible ? styles.show : ''}`}>
+                <Image id={styles.smiley1} src={smiley1} alt="smiley"/>
+                <Image id={styles.smiley2} src={smiley2} alt="smiley"/>
+                <Image id={styles.smiley3} src={smiley3} alt="smiley"/>
+                <Image id={styles.happy} src={happyCircle} alt="happy to see you"/>
+                <div id={styles.textcircle}>
+                    <Image id={styles.textimage} src={textCircle} alt={name}/>
+                    <div id={styles.textname}>
+                        <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={100} fontSizePrecisionPx={0.1}>{name}</AutoTextSize>
+                    </div>
+                </div>
+            </div>
+            <Image id={styles.redbottom} src={redBottom} alt=""/>
         </div>
         )}
