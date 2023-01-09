@@ -11,25 +11,38 @@ import redBottom from '../images/frame-1/red-bottom.svg';
 
 import styles from '../styles/frame_1.module.css';
 
-
+// This frame shows the lobby member name - a dynamic field
 
 export default function Frame1({ name }) {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
 
     return (
         <div ref={ref} className={styles.container}>
-            <div className={`${styles.hidden} ${elementIsVisible ? styles.show : ''}`}>
-                <Image id={styles.smiley1} src={smiley1} alt="smiley"/>
-                <Image id={styles.smiley2} src={smiley2} alt="smiley"/>
-                <Image id={styles.smiley3} src={smiley3} alt="smiley"/>
-                <Image id={styles.happy} src={happyCircle} alt="happy to see you"/>
-                <div id={styles.textcircle}>
-                    <Image id={styles.textimage} src={textCircle} alt={name}/>
-                    <div id={styles.textname}>
-                        <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={100} fontSizePrecisionPx={0.1}>{name}</AutoTextSize>
+                <div className={styles.smiley1}>
+                    <Image id='smiley1' src={smiley1} alt="smiley" fill/>
+                </div>
+                <div className={styles.smiley2}>
+                    <Image id='smiley2' src={smiley2} alt="smiley" fill/>
+                </div>
+                <div className={styles.smiley3}>
+                    <Image id='smiley3' src={smiley3} alt="smiley" fill/>
+                </div>
+                <div className={`${styles.hidden2} ${elementIsVisible ? styles.show : ''}`}>
+                    <div className={styles.happy}>
+                        <Image id='happy' src={happyCircle} alt="happy to see you" fill/>
                     </div>
                 </div>
+                <div className={`${styles.hidden1} ${elementIsVisible ? styles.show : ''}`}>
+                    <div className={styles.textcircle}>
+                        <Image id='textcircle' src={textCircle} alt={name} fill/>
+                        {/* adjust the name size to match it's container size */}
+                        <div className={styles.textname}> 
+                            <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={100} fontSizePrecisionPx={0.1}> { name } </AutoTextSize>
+                        </div>
+                    </div>
+                </div>
+            <div className={styles.redbottom}>
+                <Image id='redbottom' src={redBottom} alt="" fill/>
             </div>
-            <Image id={styles.redbottom} src={redBottom} alt=""/>
         </div>
         )}

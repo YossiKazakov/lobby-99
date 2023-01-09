@@ -3,80 +3,102 @@
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    background: #6249FF;
+    background: #ECFF7C;
     /* border: #FF6D46 dashed 4px; */
 }
 
-#smiley1{
+.smiley1{
+    height: 25%;
+    width: 50%;
+
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0%;
+    top: 0%;
+    /* border: #FF6D46 dashed 4px; */
 }
 
-#smiley2{
+.smiley2{
+    height: 40%;
+    width: 40%;
+
     position: absolute;
-    left: 0px;
-    bottom: 100px;
-}
-#smiley3{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+    left: 0%;
+    bottom: 15%;
+    /* border: #FF6D46 dashed 4px; */
 }
 
-#happy{
+.smiley3{
+    height: 30%;
+    width: 60%;
+
     position: absolute;
-    right: 0px;
-    bottom: 145px;
+    right: 0%;
+    bottom: 0%;
+    /* border: #FF6D46 dashed 4px; */
 }
 
-#textcircle{
+.happy{
+    height: 45%;
+    width: 70%;
+
     position: absolute;
-    left: 0px;
-    top: 50px;
+    right: 0%;
+    bottom: 17%;
+    /* border: #FF6D46 dashed 4px; */
+}
+
+.textcircle{
+    height: 50%;
+    width: 85%;
+
+    position: absolute;
+    left: 0%;
+    top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: #FF6D46 dashed 4px; */
 }
-#textimage{
+
+.textname{
     position: relative;
-    left: 17px;
-    /* border: #06050c dashed 4px; */
-
-}
-#textname{
+    width: 60%;
+    right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 381px;
-    position: absolute;
-    max-width: 223px;
 
     font-family: 'CosHalavDfus';
     font-style: normal;
     font-weight: 400;
-    line-height: 39px;
+    line-height: 5%;
     letter-spacing: 0.125em;
-
     color: #6249FF;
-    /* background: #FF6D46; */
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* background: #FF6D46; */
     /* border: #6249FF dashed 4px; */
-
 }
 
-#redbottom
+.redbottom
 {
+    height: 10%;
+    width: 100%;
+
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
+    /* border: #FF6D46 dashed 4px; */
 }
 
-.hidden {
+.hidden1 {
     opacity: 0;
-    transition: all 2s;
+    transition: 1s;
+}
+
+.hidden2 {
+    opacity: 0;
+    transition: 2s;
 }
 
 .show {
