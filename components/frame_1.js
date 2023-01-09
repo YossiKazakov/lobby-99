@@ -17,14 +17,14 @@ export default function Frame1({ name }) {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
 
     return (
-        <div ref={ref} className={styles.container}>
+        <div className={styles.container}>
                 <div className={styles.smiley1}>
                     <Image id='smiley1' src={smiley1} alt="smiley" fill/>
                 </div>
                 <div className={styles.smiley2}>
                     <Image id='smiley2' src={smiley2} alt="smiley" fill/>
                 </div>
-                <div className={styles.smiley3}>
+                <div ref={ref} className={styles.smiley3}>
                     <Image id='smiley3' src={smiley3} alt="smiley" fill/>
                 </div>
                 <div className={`${styles.hidden2} ${elementIsVisible ? styles.show : ''}`}>

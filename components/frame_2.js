@@ -1,17 +1,42 @@
 import { useInView } from 'react-intersection-observer';
-import styles from '../styles/member.module.css';
+import Image from 'next/image';
+
+import starTop from '../images/frame-2/star-top.svg';
+import starMain from '../images/frame-2/star-main.svg';
+import starBottom from '../images/frame-2/star-bottom.svg';
+
+import styles from '../styles/frame_2.module.css';
+
+// This frame shows
 
 export default function Frame2() {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
 
+    return (
+        <div className={styles.container}>
+            <div className={styles.top}>
+                <Image id='top' src={starTop} alt="star" fill/>
+            </div>
+            <div ref={ref} className={styles.text1}>
+                אבל
+                <br/>
+                ,בשבילנו
+                <br/>
+                כל אחד
+                <br/>
+                ואחת הוא 
+            </div>
 
-    return (<>
-        <div ref={ref} className={styles.frame}>
-            <div className="content">
-                <h2 className={`${styles.hidden} ${elementIsVisible ? styles.show : ''}`}>
-                    לורם איפסום דולור סיט אמט, קונסקטטור אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף לפרומי בלוף־קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה ש”יצמה ברורק“. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט. ושבעגט לבם סולגק. בראיט ולחת צורק מונחף, בגורמי מג׳מש. תרבנך וסתעד לכנו סתשם השמה – לתכי מורגם בורק? לתיג ישבעס.
-                </h2>
+            <div className={`${styles.main} ${elementIsVisible ? styles.spin : ''}`}>
+                    <Image id='main' src={starMain} alt="star" fill/>
+                    <div className={styles.text2}>
+                        יחיד
+                        <br/>
+                        ומיוחד
+                    </div>
+            </div>
+            <div className={styles.bottom}>
+                <Image id='bottom' src={starBottom} alt="star" fill/>
             </div>
         </div>
-        </>
         )}
