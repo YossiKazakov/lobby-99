@@ -41,8 +41,8 @@ export default function Frame1({ name }) {
                         </div>
                     </div>
                 </div>
-            <div className={styles.redbottom}>
+            {/* <div className={styles.redbottom}>
                 <Image id='redbottom' src={redBottom} alt="" fill/>
-            </div>
+            </div> */}
         </div>
         )}
