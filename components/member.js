@@ -1,9 +1,18 @@
+import Image from 'next/image';
+
 import styles from '../styles/member.module.css';
+
 import Opening from './opening_frame';
-import Frame1  from './frame_1';
-import Frame2 from './frame_2';
+import Name  from './name';
+import Unique from './unique';
+import Past from './past';
+import Future from './future';
+
+import connector from '../images/connector.svg'
+import turn from '../images/turn.svg'
+import equal from '../images/equal.svg'
 import Frame3 from './frame_3';
-import Frame4 from './frame_4';
+
 
 export default function Member({ member }) {
     return (
@@ -12,16 +21,34 @@ export default function Member({ member }) {
             <Opening />
         </div>
         <div className={styles.frame}>
-            <Frame1 name={member.name}/>
+            <Name name={member.name}/>
         </div>
         <div className={styles.frame}>
-            <Frame2 />
+            <Unique />
         </div>
         <div className={styles.frame}>
-            <Frame3 />
+            <Past />
+        </div>
+
+        {/* in the meantime just photos */}
+        <div className={styles.frame}> 
+            <Frame3 image={
+                <Image id='connector' src={connector} alt="the connector between the people to the govern" fill/>
+            }/>
         </div>
         <div className={styles.frame}>
-            <Frame4 />
+            <Frame3 image={
+                <Image id='equal' src={equal} alt="all voices are equal" fill/>
+            }/>
+        </div>
+        <div className={styles.frame}>
+            <Frame3 image={
+                <Image id='turn' src={turn} alt="now it's your turn" fill/>
+            }/>
+        </div>
+        
+        <div className={styles.frame}>
+            <Future />
         </div>
     </div>
     )}

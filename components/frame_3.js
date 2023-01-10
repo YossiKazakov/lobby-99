@@ -1,17 +1,10 @@
-import { useInView } from 'react-intersection-observer';
-import styles from '../styles/member.module.css';
+import styles from '../styles/name.module.css';
 
-export default function Frame3() {
-    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
+export default function Frame3({ image }) {
 
 
-    return (<>
-        <div ref={ref} className={styles.frame}>
-            <div className="content">
-            <span className={`${styles.rocket} ${elementIsVisible ? styles.animateRocket : ''}`}>
-                    🚀
-                    </span>
-            </div>
-        </div>
-        </>
-        )}
+    return (
+    <div className={styles.container}>
+        { image }
+    </div>
+    )}

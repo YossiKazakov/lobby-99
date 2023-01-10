@@ -5,11 +5,11 @@ import starTop from '../images/frame-2/star-top.svg';
 import starMain from '../images/frame-2/star-main.svg';
 import starBottom from '../images/frame-2/star-bottom.svg';
 
-import styles from '../styles/frame_2.module.css';
+import styles from '../styles/unique.module.css';
 
 // This frame shows
 
-export default function Frame2() {
+export default function Unique() {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
 
     return (

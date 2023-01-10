@@ -33,7 +33,7 @@
 
     position: absolute;
     right: 15%;
-    bottom: 20%;
+    bottom: 18%;
     /* border: #6249FF dashed 4px; */
 
     display: flex;
@@ -42,7 +42,7 @@
 }
 
 .spin{
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
     animation-duration: 10s;
     animation-name: animate-spin;
 
@@ -50,14 +50,15 @@
 .text1{
     position: absolute;
     left: 12.05%;
-    right: 17.44%;
+    /* right: 17.44%; */
     top: 12.8%;
-    bottom: 56.4%;
+    /* bottom: 56.4%; */
+    width: 70%;
 
     font-family: 'COLBO';
     font-style: normal;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 3em;
     line-height: 108%;
     /* or 65px */
 
@@ -71,10 +72,10 @@
     font-family: 'CosHalavDfus';
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 3.5em;
     line-height: 64%;
     /* or 51px */
-    
+    width: 50%;
     text-align: center;
     
     color: #FBFFE0;
@@ -89,21 +90,18 @@
     0% {
       transform: rotate(5deg);
     }
-    10% {
-      transform: rotate(10deg);
-    }
     20% {
-      transform: rotate(5deg);
-    }
-    30% {
-      transform: rotate(-5deg);
+      transform: rotate(15deg);
     }
     40% {
-      transform: rotate(-10deg);
+      transform: rotate(5deg);
     }
-    50% {
-        transform: rotate(-5deg);
-      }
+    60% {
+      transform: rotate(-5deg);
+    }
+    80% {
+      transform: rotate(5deg);
+    }
     100% {
       transform: rotate(0);
     }

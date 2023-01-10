@@ -9,11 +9,11 @@ import smiley2 from '../images/frame-1/smiley2.svg';
 import smiley3 from '../images/frame-1/smiley3.svg';
 import redBottom from '../images/frame-1/red-bottom.svg';
 
-import styles from '../styles/frame_1.module.css';
+import styles from '../styles/name.module.css';
 
 // This frame shows the lobby member name - a dynamic field
 
-export default function Frame1({ name }) {
+export default function Name({ name }) {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
 
     return (
