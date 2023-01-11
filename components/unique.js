@@ -1,9 +1,9 @@
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
-import starTop from '../images/frame-2/star-top.svg';
-import starMain from '../images/frame-2/star-main.svg';
-import starBottom from '../images/frame-2/star-bottom.svg';
+import starTop from '../images/stars/star-top-left.svg';
+import starMain from '../images/stars/star-pink.svg';
+import starBottom from '../images/stars/star-right-bottom.svg';
 
 import styles from '../styles/unique.module.css';
 

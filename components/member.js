@@ -7,8 +7,8 @@ import Name  from './name';
 import Unique from './unique';
 import Past from './past';
 import Future from './future';
+import Connector from './theconnector';
 
-import connector from '../images/connector.svg'
 import turn from '../images/turn.svg'
 import equal from '../images/equal.svg'
 import Frame3 from './frame_3';
@@ -32,9 +32,7 @@ export default function Member({ member }) {
 
         {/* in the meantime just photos */}
         <div className={styles.frame}> 
-            <Frame3 image={
-                <Image id='connector' src={connector} alt="the connector between the people to the govern" fill/>
-            }/>
+            <Connector />
         </div>
         <div className={styles.frame}>
             <Frame3 image={

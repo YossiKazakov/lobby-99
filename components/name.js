@@ -2,12 +2,12 @@ import { useInView } from 'react-intersection-observer';
 import { AutoTextSize } from 'auto-text-size'
 import Image from 'next/image';
 
-import textCircle from '../images/frame-1/text-circle.svg';
-import happyCircle from '../images/frame-1/happy-circle.svg';
-import smiley1 from '../images/frame-1/smiley1.svg';
-import smiley2 from '../images/frame-1/smiley2.svg';
-import smiley3 from '../images/frame-1/smiley3.svg';
-import redBottom from '../images/frame-1/red-bottom.svg';
+import textCircle from '../images/name-frame/text-circle.svg';
+import happyCircle from '../images/name-frame/happy-circle.svg';
+import smiley1 from '../images/name-frame/smiley1.svg';
+import smiley2 from '../images/name-frame/smiley2.svg';
+import smiley3 from '../images/name-frame/smiley3.svg';
+import redBottom from '../images/name-frame/red-bottom.svg';
 
 import styles from '../styles/name.module.css';
 
