@@ -1,0 +1,90 @@
+.container {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #ECFF7C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.textAndTime {
+    /* border: green solid 3px; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+.text {
+    /* border: green solid 3px; */
+    position: absolute;
+    height: 40%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    top: 7%;
+    z-index: 1;
+    font-size: 200%;
+    font-family: 'COLBO';
+    font-style: normal;
+    letter-spacing: 0.125em;
+    color: black;
+}
+
+.purpleBackground {
+    /* border: purple solid 3px; */
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    /* border: green solid 3px; */
+    position: absolute;
+    width: fit-content;
+    font-size: 500%;
+    font-family: 'COLBO';
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.orangeLoby {
+    /* border: green solid 3px; */
+    position: absolute;
+    height: 10%;
+    width: 40%;
+    bottom: 30%;
+}
+
+.orangeStar {
+    /* border: green solid 3px; */
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    align-self: flex-end;
+    left: 5%;
+}
+
+.purpleStar {
+    /* border: green solid 3px; */
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    align-self: flex-start;
+    right: 5%;
+    margin-top: 8%;
+}
