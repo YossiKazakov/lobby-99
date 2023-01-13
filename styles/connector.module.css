@@ -37,10 +37,10 @@
 }
 .text{
     position: absolute;
-    top: 25%;
-    bottom:auto;
     width: fit-content;
     height: fit-content;
+
+    top: calc(50% - var(--height)/2);
 
     font-family: 'COLBO';
     font-style: normal;

@@ -1,3 +1,9 @@
+/* @-webkit-keyframes blackWhiteFade {  
+    0% { background-color: white; }
+    50% { background-color: black; }
+    100% { background-color: white; }
+  } */
+
 .container{
     position: relative;
     box-sizing: border-box;
@@ -5,10 +11,13 @@
     width: 100%;
     background: #FFC4B5;
     /* border: #FF6D46 dashed 4px; */
-
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+    /* -webkit-animation-name: blackWhite;
+    -webkit-animation-duration: 2s;  */
+
+
 }
 
 .lobbyLogo{

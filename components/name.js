@@ -17,7 +17,8 @@ export default function Name({ name }) {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${elementIsVisible ? styles.bg : ''}`}>
+        {/* <div className={styles.container}> */}
                 <div className={styles.smiley1}>
                     <Image id='smiley1' src={smiley1} alt="smiley" fill/>
                 </div>

@@ -29,11 +29,11 @@ export default function Member({ member }) {
         <div className={styles.frame}>
             <Past />
         </div>
-
-        {/* in the meantime just photos */}
         <div className={styles.frame}> 
             <Connector />
         </div>
+        
+        {/* in the meantime just photos */}
         <div className={styles.frame}>
             <Frame3 image={
                 <Image id='equal' src={equal} alt="all voices are equal" fill/>

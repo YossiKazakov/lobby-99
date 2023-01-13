@@ -3,8 +3,16 @@
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background: #ECFF7C;
+    background: #FFC4B5;
     /* border: #FF6D46 dashed 4px; */
+
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+}
+
+.bg{
+    background: #ECFF7C;
 }
 
 .smiley1{
@@ -64,6 +72,7 @@
     position: relative;
     width: 60%;
     right: 5%;
+    /* maybe dont needed: */
     bottom: 2.5%;
     display: flex;
     justify-content: center;
