@@ -1,4 +1,6 @@
-import Image from 'next/image';
+import React, { useEffect, useRef} from 'react';
+import { useInView } from 'react-intersection-observer';
+
 
 import styles from '../styles/member.module.css';
 
@@ -16,24 +18,26 @@ import NextVote from './next_vote_frame';
 
 
 export default function Member({ member }) {
-    const openingOneRef = useRef(null) // The following is responsible for the auto scroll
-    const openingTwoRef = useRef(null)
+    const ref = useRef(null);
     useEffect(() => {
         setTimeout(() => {
-            openingTwoRef.current.scrollIntoView({ behavior: 'smooth' });
+            ref.current.scrollIntoView({ behavior: 'smooth' });
         }, 3000);
     }, []);
+
+
     return (
     <div className={styles.container}>
         <div className={styles.frame}>
             <Opening />
         </div>
-        <div className={styles.frame}>
+        <div  ref={ref} className={styles.frame}>
             <Intro1 />
         </div>
-        <div className={styles.frame}>
-            <Intro2 />
+        <div  className={styles.frame}>
+                <Intro2 />
         </div>
+
         <div className={styles.frame}>
             <Name name={member.name} join_at={member.join_at}/>
         </div>
@@ -49,9 +53,10 @@ export default function Member({ member }) {
             <Future />
         </div>
 
-            <div className={styles.frame}>
+            
+        <div className={styles.frame}>
                 <NextVote name={member.name} />
-            </div>
         </div>
+    </div>
     )
 }

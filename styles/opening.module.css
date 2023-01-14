@@ -4,11 +4,9 @@
     height: 100%;
     width: 100%;
     background: #FBFFDA;
-    overflow: hidden;
-
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 
 .lobbyLogo{
@@ -35,13 +33,22 @@
 
     color: #FF5B2F;
 }
-
+.slide
+{
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 150%;
+}
 .hidden {
     opacity: 0;
     transition-property: all;
     transition-delay: 1s;
     transition: 2s;
-
+}
+.show{
+    opacity: 1;
+    transition-delay: 1s;
 }
 
   

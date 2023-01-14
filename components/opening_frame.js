@@ -22,11 +22,9 @@ export default function Opening() {
                         במיוחד<br/>עבורך
                     </div>
                 </div>
-                <div className={`${styles.slide} ${elementIsVisible ? styles.show : styles.hidden}`}>
-                    {/* <div className={styles.slide}> */}
+                {/* <div className={`${styles.slide} ${elementIsVisible ? styles.show : styles.hidden}`}>
                         <Image className={styles.slideimg} src={slide} alt="slide to continue" fill/>
-                    {/* </div> */}
-                </div>
+                </div> */}
             </div>
         </div>
     )}
