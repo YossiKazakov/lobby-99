@@ -1,0 +1,36 @@
+
+.container{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #FBFFDA;
+    display: flex;
+    /* justify-content: center; */
+
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+}
+
+.bg{
+    background: #FFC4B5;
+}
+
+
+.text{
+    align-self: center;
+    position: absolute;
+    top: 30%;
+    right: 7%;
+    font-family: 'COLBO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4em;
+    line-height: 88%;
+
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FC653C;
+}
+  

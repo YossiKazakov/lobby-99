@@ -2,6 +2,8 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
 import lobbyLogo from '../images/lobby-logo.svg';
+import slide from '../images/slide.svg'
+
 import styles from '../styles/opening.module.css';
 
 // This is the opening frame, it shows the lobby logo
@@ -19,6 +21,11 @@ export default function Opening() {
                     <div className={styles.text}>
                         במיוחד<br/>עבורך
                     </div>
+                </div>
+                <div className={`${styles.slide} ${elementIsVisible ? styles.show : styles.hidden}`}>
+                    {/* <div className={styles.slide}> */}
+                        <Image className={styles.slideimg} src={slide} alt="slide to continue" fill/>
+                    {/* </div> */}
                 </div>
             </div>
         </div>
