@@ -16,6 +16,13 @@ import NextVote from './next_vote_frame';
 
 
 export default function Member({ member }) {
+    const openingOneRef = useRef(null) // The following is responsible for the auto scroll
+    const openingTwoRef = useRef(null)
+    useEffect(() => {
+        setTimeout(() => {
+            openingTwoRef.current.scrollIntoView({ behavior: 'smooth' });
+        }, 3000);
+    }, []);
     return (
     <div className={styles.container}>
         <div className={styles.frame}>
@@ -42,8 +49,9 @@ export default function Member({ member }) {
             <Future />
         </div>
 
-        <div className={styles.frame}> 
-            <NextVote name={member.name} />
+            <div className={styles.frame}>
+                <NextVote name={member.name} />
+            </div>
         </div>
-    </div>
-    )}
+    )
+}

@@ -9,8 +9,8 @@ import Link from 'next/link';
 import styles from '../styles/nextvote.module.css';
 import React, { useState, useEffect } from 'react'
 
-const absoluteTextContent = "מחכים לך בהצבעה"
-const shareLink = "https://lobby99.org.il/" // To be changed
+const absoluteTextContent = "מחכים לך בהצבעה";
+const shareLink = "https://lobby99.org.il/"; // To be changed
 const now = new Date();
 const voteDate = new Date(now); // The voteDate variable will change according to the actual date of voting
 voteDate.setDate(voteDate.getDate() + 1); // Right now it just set to tomorrow
@@ -46,7 +46,7 @@ export default function NextVote({ name }) {
                     <span>{","}{name}</span><span>{absoluteTextContent}</span>
                 </div>
                 <div className={styles.purpleBackground}>
-                    <Image id='purpleBackgroundSvg' src={PurpleBackground} fill />
+                    <Image id='purpleBackgroundSvg' src={PurpleBackground} alt='timer' fill />
                     <div className={styles.time}>
                         <Countdown />
                     </div>

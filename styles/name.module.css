@@ -1,4 +1,4 @@
-.container{
+.container {
     position: relative;
     box-sizing: border-box;
     height: 100%;
@@ -15,7 +15,7 @@
     background: #ECFF7C;
 }
 
-.smiley1{
+.smiley1 {
     height: 25%;
     width: 50%;
 
@@ -25,7 +25,7 @@
     /* border: #FF6D46 dashed 4px; */
 }
 
-.smiley2{
+.smiley2 {
     height: 40%;
     width: 40%;
 
@@ -35,7 +35,7 @@
     /* border: #FF6D46 dashed 4px; */
 }
 
-.smiley3{
+.smiley3 {
     height: 30%;
     width: 60%;
 
@@ -45,7 +45,7 @@
     /* border: #FF6D46 dashed 4px; */
 }
 
-.happy{
+.happy {
     height: 45%;
     width: 70%;
 
@@ -55,7 +55,7 @@
     /* border: #FF6D46 dashed 4px; */
 }
 
-.textcircle{
+.textcircle {
     height: 50%;
     width: 85%;
 
@@ -68,7 +68,7 @@
     /* border: #FF6D46 dashed 4px; */
 }
 
-.textname{
+.textname {
     position: relative;
     width: 60%;
     right: 5%;
@@ -90,8 +90,7 @@
     /* border: #6249FF dashed 4px; */
 }
 
-.redbottom
-{
+.redbottom {
     height: 10%;
     width: 100%;
 
