@@ -8,6 +8,7 @@ import Unique from './unique';
 import Past from './past';
 import Future from './future';
 import Connector from './theconnector';
+import NextVote from './next_vote_frame';
 
 import turn from '../images/turn.svg'
 import equal from '../images/equal.svg'
@@ -47,6 +48,10 @@ export default function Member({ member }) {
         
         <div className={styles.frame}>
             <Future />
+        </div>
+
+        <div className={styles.frame}> 
+            <NextVote name={member.name} />
         </div>
     </div>
     )}
