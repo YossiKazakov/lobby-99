@@ -14,12 +14,11 @@ export function parseData({ data }) {
     return members;
 }
 
-export function calculateTime({ join_at }) {
-    return years, months, days;
+export function calculateTime({ join_at })
+{
+    const current = new Date();
+    const join = new Date(join_at);
+    const diff = new Date(current - join);
+    console.log(diff);
+    return ({years: (diff.getFullYear() - 1970), months: diff.getMonth(), days: (diff.getDate() - 1)});
 }
-
-// export async function numberOfMembers() {
-//     const { data } = await client.from(MEMBERS_TABLE_NAME).select('*')
-//     // return Object.keys(data).map(key => data[key]).length;
-//     return data.length
-// }

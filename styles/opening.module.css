@@ -1,16 +1,55 @@
-.container{ 
+.container{
     position: relative;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background: #FFC4B5;
-    /* border: #FF6D46 dashed 4px; */
-    overflow: hidden;
+    background: #FBFFDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lobbyLogo{
+    position: absolute;
+    height: 25%;
+    width: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     
+    /* border: #FF6D46 dashed 4px; */
 }
 
+.text{
+    font-family: 'COLBO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.5em;
+    line-height: 91.5%;
+    /* or 92px */
+
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #FF5B2F;
+}
+.slide
+{
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 150%;
+}
+.hidden {
+    opacity: 0;
+    transition-property: all;
+    transition-delay: 1s;
+    transition: 2s;
+}
+.show{
+    opacity: 1;
+    transition-delay: 1s;
+}
 
   

@@ -1,103 +1,63 @@
-import Image from 'next/image';
+import React, { useEffect, useRef} from 'react';
+import { useInView } from 'react-intersection-observer';
+
 
 import styles from '../styles/member.module.css';
 
-import OpeningOne from './opening_frame1';
-import OpeningTwo from './opening_frame2';
-import ThankYou from './opening_frame3';
-import Name from './name';
+import Opening from './opening_frame';
+import Intro1 from './intro1';
+import Intro2 from './intro2';
+
+
+import Name  from './name';
 import Unique from './unique';
-import Past from './past';
 import Future from './future';
 import Connector from './theconnector';
 import NextVote from './next_vote_frame';
-import LobbyEmpire from './lobby_empire';
-
-import turn from '../images/turn.svg'
-import equal from '../images/equal.svg'
-import Frame3 from './frame_3';
-import React, { useEffect, useRef } from 'react';
 
 
-// export default function Member({ member }) {
-//     const openingOneRef = useRef(null) // The following is responsible for the auto scroll
-//     const openingTwoRef = useRef(null)
-//     useEffect(() => {
-//         setTimeout(() => {
-//             openingTwoRef.current.scrollIntoView({ behavior: 'smooth' });
-//         }, 3000);
-//     }, []);
-//     return (
-//         <div className={styles.container}>
-//             <div ref={openingOneRef} className={styles.frame}>
-//                 <OpeningOne />
-//             </div>
-//             <div ref={openingTwoRef} className={styles.frame}>
-//                 <OpeningTwo />
-//             </div>
-//             <div className={styles.frame}>
-//                 <ThankYou />
-//             </div>
-//             <div className={styles.frame}>
-//                 <Name name={member.name} />
-//             </div>
-//             <div className={styles.frame}>
-//                 <Unique />
-//             </div>
-//             <div className={styles.frame}>
-//                 <Past />
-//             </div>
 
-//             {/* in the meantime just photos */}
-//             <div className={styles.frame}>
-//                 <Connector />
-//             </div>
-//             <div className={styles.frame}>
-//                 <Frame3 image={
-//                     <Image id='equal' src={equal} alt="all voices are equal" fill />
-//                 } />
-//             </div>
-//             <div className={styles.frame}>
-//                 <Frame3 image={
-//                     <Image id='turn' src={turn} alt="now it's your turn" fill />
-//                 } />
-//             </div>
 
-//             <div className={styles.frame}>
-//                 <Future />
-//             </div>
-
-//             <div className={styles.frame}>
-//                 <NextVote name={member.name} />
-//             </div>
-//         </div>
-//     )
-// }
-export default function Member({ member , numOfMembers}) {
-    const openingOneRef = useRef(null) // The following is responsible for the auto scroll
-    const openingTwoRef = useRef(null)
+export default function Member({ member }) {
+    const ref = useRef(null);
     useEffect(() => {
         setTimeout(() => {
-            openingTwoRef.current.scrollIntoView({ behavior: 'smooth' });
+            ref.current.scrollIntoView({ behavior: 'smooth' });
         }, 3000);
     }, []);
+
+
     return (
         <div className={styles.container}>
-            <div ref={openingOneRef} className={styles.frame}>
-                <OpeningOne />
-            </div>
-            <div ref={openingTwoRef} className={styles.frame}>
-                <OpeningTwo />
-            </div>
-            <div className={styles.frame}>
-                <ThankYou />
-            </div>
-           <div className={styles.frame}>
-                <LobbyEmpire />
-           </div>
-            <div className={styles.frame}>
-                <NextVote name={member.name} />
-            </div>
+        <div className={styles.frame}>
+            <Opening />
         </div>
+        <div  ref={ref} className={styles.frame}>
+            <Intro1 />
+        </div>
+        <div  className={styles.frame}>
+                <Intro2 />
+        </div>
+
+        <div className={styles.frame}>
+            <Name name={member.name} join_at={member.join_at}/>
+        </div>
+        <div className={styles.frame}>
+            <Unique />
+        </div>
+
+        <div className={styles.frame}> 
+            <Connector />
+        </div>
+        
+        <div className={styles.frame}>
+            <Future />
+        </div>
+
+            
+        <div className={styles.frame}>
+                <NextVote name={member.name} />
+        </div>
+    </div>
     )
 }
