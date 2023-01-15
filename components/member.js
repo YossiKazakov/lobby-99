@@ -18,7 +18,7 @@ import LobbyEmpire from './lobby_empire';
 import Unregular from './unregular'
 
 
-
+import Acts from './acts';
 
 export default function Member({ member }) {
     const ref = useRef(null);
@@ -38,10 +38,10 @@ export default function Member({ member }) {
                 <Intro1 />
             </div>
             <div className={styles.frame}>
-                <Intro2 name={member.name}/>
+                <Intro2 name={member.name} />
             </div>
             <div className={styles.frame}>
-                <LobbyEmpire  />
+                <LobbyEmpire />
             </div>
             <div className={styles.frame}>
                 <Name name={member.name} join_at={member.join_at} />
@@ -61,6 +61,9 @@ export default function Member({ member }) {
 
             <div className={styles.frame}>
                 <NextVote name={member.name} />
+            </div>
+            <div className={styles.frame}>
+                <Acts />
             </div>
         </div>
     )
