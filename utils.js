@@ -22,3 +22,8 @@ export function calculateTime({ join_at })
     console.log(diff);
     return ({years: (diff.getFullYear() - 1970), months: diff.getMonth(), days: (diff.getDate() - 1)});
 }
+// export const numOfMemebers = async () => {
+//     const { data } = await client.from(MEMBERS_TABLE_NAME)
+//     .select("*").length
+//     return data
+// }

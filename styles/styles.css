@@ -3,6 +3,21 @@ const gretabold = localFont({ src: '../fonts/GretaSansH+L-Bold.otf' })
 const gretareg = localFont({ src: '../fonts/GretaSansH+L-Regular.otf' }) */
 
 @font-face {
+  font-family: "SimplerPro-Black";
+  src: url('../fonts/SimplerPro-Black.otf');
+}
+
+@font-face {
+  font-family: "SimplerPro-Bold";
+  src: url('../fonts/SimplerPro-Bold.otf');
+}
+
+@font-face {
+  font-family: "SimplerPro-Regular";
+  src: url('../fonts/SimplerPro-Regular.otf');
+}
+
+@font-face {
   font-family: "COLBO";
   src: url('../fonts/COLBO-BlackExtended.otf');
 }

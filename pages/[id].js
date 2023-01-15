@@ -4,9 +4,11 @@ import { client } from "../database";
 import Member from "../components/member";
 
 const MemberDetails = ({ member }) => {
-  console.log({ member });
+  // console.log({ member });
+  // console.log("this is num!!!" , num)
+
   return (
-    <Member member = {member} />
+    <Member member={member} />
   );
 };
 
@@ -22,7 +24,7 @@ export const getStaticPaths = async () => {
 
 
   const { data } = await client.from(MEMBERS_TABLE_NAME).select("id");
-  if (data != null){
+  if (data != null) {
     paths = data.map(({ id }) => ({
       params: {
         id: id.toString(),
@@ -37,18 +39,18 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { id } }) => { // Maybe hash the id
-  let member = {'id': 1, 'name': 'עמית'}; // ****** default in case having troubles reading from the supabase  
+  let member = { 'id': 1, 'name': 'עמית' }; // ****** default in case having troubles reading from the supabase  
 
   const { data } = await client.from(MEMBERS_TABLE_NAME)
     .select("*")
     .eq("id", id)
     .single();
-  if(data != null){
+  if (data != null) {
     member = data;
   }
   return {
     props: {
-      member,
+      member
     },
   };
 };

@@ -16,7 +16,7 @@ import styles from '../styles/name.module.css';
 // This frame shows the lobby member name and the time that paseed sience he joiend to lobby
 
 export default function Name({ name, join_at }) {
-    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
+    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: false});
     
     const { years, months, days } = calculateTime({join_at});
     console.log(years);
