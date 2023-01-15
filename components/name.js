@@ -13,10 +13,11 @@ import redBottom from '../images/name-frame/red-bottom.svg';
 
 import styles from '../styles/name.module.css';
 
-// This frame shows the lobby member name - a dynamic field
+// This frame shows the lobby member name and the time that paseed sience he joiend to lobby
 
 export default function Name({ name, join_at }) {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
+    
     const { years, months, days } = calculateTime({join_at});
     console.log(years);
     console.log(months);
@@ -47,6 +48,7 @@ export default function Name({ name, join_at }) {
                         <div className={styles.textname}> 
                             <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={100} fontSizePrecisionPx={0.1}> { name } </AutoTextSize>
                         </div>
+                        {/* ######### */}
                     </div>
                 </div>
             {/* <div className={styles.redbottom}>
