@@ -15,7 +15,7 @@ import Future from './future';
 import Connector from './theconnector';
 import NextVote from './next_vote_frame';
 
-
+import Acts from './acts';
 
 export default function Member({ member }) {
     const ref = useRef(null);
@@ -56,6 +56,9 @@ export default function Member({ member }) {
             
         <div className={styles.frame}>
                 <NextVote name={member.name} />
+        </div>
+        <div className={styles.frame}>
+                <Acts />
         </div>
     </div>
     )
