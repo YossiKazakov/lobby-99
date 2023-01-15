@@ -24,14 +24,10 @@
 .paragraph1 {
     /* border: black solid 2px; */
     position: absolute;
-    /* width: 84.6%;
+    width: 84.6%;
     height: 8.5%;
     left: 8.4615%;
-    top: 20.8%; */
-    width: 330px;
-    height: 72px;
-    left: 33px;
-    top: 176px;
+    top: 20.8%;
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
@@ -48,14 +44,10 @@
 .paragraph2 {
     /* border: greenyellow solid 2px; */
     position: absolute;
-    /* width: 88.20512820512821%;
+    width: 88.20512820512821%;
     height: 12.793755364832135%;
     left: 4.615384615384615%;
-    top: 31.120468277945624%; */
-    width: 345px;
-    height: 108px;
-    left: 18px;
-    top: 263px;
+    top: 31.120468277945624%;
 
     font-family: 'SimplerPro-Black';
     font-style: normal;
@@ -72,14 +64,10 @@
 .paragraph3 {
     /* border: red solid 2px; */
     position: absolute;
-    /* width: 84.6%;
+    width: 84.6%;
     height: 8.5%;
     left: 8.4615%;
-    top: 45.7%; */
-    width: 330px;
-    height: 72px;
-    left: 33px;
-    top: 386px;
+    top: 45.7%;
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
