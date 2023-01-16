@@ -1,4 +1,3 @@
-
 .container{
     position: relative;
     box-sizing: border-box;
@@ -19,11 +18,51 @@
 
 .subject1{
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 15%;
-    top: 40%;
+    top: 10%;
+    right: 10%;
     /* border: black dashed 3px ; */
 }
+
+.subject2{
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    top: 25%;
+    left: 10%;
+    /* border: black dashed 3px ; */
+    transform: rotate(-5deg);
+}
+
+.subject3{
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    top: 40%;
+    right: 10%;
+    /* border: black dashed 3px ; */
+}
+
+.subject4{
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    top: 55%;
+    left: 10%;
+    /* border: black dashed 3px ; */
+    transform: rotate(-5deg);
+}
+
+.subject5{
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    top: 70%;
+    right: 10%;
+    /* border: black dashed 3px ; */
+}
+
 .subject{
     position: absolute;
     width: 100%;
@@ -37,10 +76,10 @@
 }
 
 .subjectTitle{
-    font-family: 'SimplerPro';
+    font-family: 'SimplerPro-Regular';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 2em;
     line-height: 89%;
     /* or 20px */
     
@@ -63,4 +102,11 @@
 
 }
 
-  
+.click{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    height: 12%;
+    width: 40%;
+    /* border: red dashed 3px ; */
+}

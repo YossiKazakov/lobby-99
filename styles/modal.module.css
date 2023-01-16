@@ -35,7 +35,7 @@
   text-align: right;
   margin: 5%;
 
-  font-family: 'SimplerPro';
+  font-family: 'SimplerPro-Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 1.2em;
@@ -46,4 +46,5 @@
   letter-spacing: 0.02em;
 
   color: #232323;
+  margin-top: 10%;
 }

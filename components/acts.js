@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
-import subjectBg from '../images/subject-bg.svg'
-import subjectBtn from '../images/subject-btn.svg'
+import clickHere from '../images/click.svg'
+import continueImg from '../images/continue.svg'
 
+import Subject from './subject.js'
 import Modal from './modal.js';
-
-import {subjectOne} from '../info.js'
-import {subjectOneContent} from '../info.js'
-
 
 import styles from '../styles/acts.module.css';
 
@@ -17,21 +14,42 @@ import styles from '../styles/acts.module.css';
 export default function Acts() {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
     const [openModal, setOpenModal] = useState(false);
-
+    const [content, setContent] = useState("");
+    const subjectOne = "נושא ראשון";
+    const subjectOneContent = "כאן יש הסבר על כל הנושא הראשון";
 
     return (
         <div className={`${styles.container} ${elementIsVisible ? styles.bg : ''}`}>
+            {/* subject 1 */}
             <div ref={ref} className={styles.subject1}>
-                <div className={styles.subject}>
-                    <Image id='subject-bg' src={subjectBg} alt="subject" fill/>
-                    <div className={styles.subjectTitle}>
-                        {subjectOne}
-                    </div>
-                </div>
-                <div className={styles.modalButton} onClick={() => setOpenModal(true)} >
-                    <Image id='subject-btn' src={subjectBtn} alt="read more" fill/>
-                </div>
+                <Subject title={subjectOne} content={subjectOneContent} setOpenModal={setOpenModal} setContent={setContent}/>
             </div>
-            <Modal open={openModal} onClose={() => setOpenModal(false)} input={subjectOneContent}/>
+            {/* subject 2 */}
+            <div ref={ref} className={styles.subject2}>
+                <Subject title={"נושא שני"} content={"כאן יש הסבר שונה"} setOpenModal={setOpenModal} setContent={setContent}/>
+            </div> 
+            {/* subject 3 */}
+            <div ref={ref} className={styles.subject3}>
+                <Subject title={"נושא שלישי"} content={"כאן יש הסבר אחר"} setOpenModal={setOpenModal} setContent={setContent}/>
+            </div>
+            {/* subject 4 */}
+            <div ref={ref} className={styles.subject4}>
+                <Subject title={"נושא רביעי"} content={" כאן יש הסבר שונה לגמרי"} setOpenModal={setOpenModal} setContent={setContent}/>
+            </div>
+            {/* subject 5 */}
+            <div ref={ref} className={styles.subject5}>
+                <Subject title={"נושא חמישי"} content={"כאן יש הסבר אחר לגמרי"} setOpenModal={setOpenModal} setContent={setContent}/>
+            </div>
+            {/* this is the modal that open with every click on a subject */}
+            <Modal open={openModal} onClose={() => setOpenModal(false)} input={content}/>
+            <div className={styles.click}>
+                <ClickImg content={content} />
+            </div>
         </div>
     )}
+
+export const ClickImg = ({ content }) => {
+    if (content == "")
+    {return(<Image id='click' src={clickHere} alt="click here" fill/>)}
+    return(<Image id='continue' src={continueImg} alt="continue" fill/>)
+}

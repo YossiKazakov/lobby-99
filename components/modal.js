@@ -15,8 +15,7 @@ export default function Modal({ open, onClose, input }) {
                     <Image id='exit' src={exit} alt="close" fill/>
                 </div>
                 <div className={styles.content}>
-                    <h1>{input}</h1>
-                    <p></p>
+                    <p>{input}</p>
                 </div>
             </div>
         </div>

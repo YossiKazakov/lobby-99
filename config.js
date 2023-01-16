@@ -8,5 +8,3 @@ export const SUPABASE_SERVICE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3
 
 export const READ_ENDPOINT = "/api/read/";
 export const MEMBERS_TABLE_NAME = "lobby_members_data";
-
-export const TOTAL_VOTE_NUM = 8;
