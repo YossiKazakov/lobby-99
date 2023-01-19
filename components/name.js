@@ -13,7 +13,7 @@ import monthsImg from '../images/name-frame/months.svg';
 import daysImg from '../images/name-frame/days.svg';
 import hoursImg from '../images/name-frame/hours.svg';
 import minutesImg from '../images/name-frame/minutes.svg';
-import secondsImg from '../images/name-frame/seconds.svg';
+import secondsImg from '../images/name-frame/secondss.svg';
 
 import styles from '../styles/name.module.css';
 
@@ -53,7 +53,7 @@ export default function Name({ name, join_at }) {
                 <div className={styles.rightcol}>
                     <Image id='right' src={smileyRight} alt="smiley" fill/>
                 </div>
-                <div ref={ref} className={styles.smiley}>
+                <div ref={ref} className={styles.topsmiley}>
                     <Image id='smiley' src={smiley} alt="smiley" fill/>
                 </div>
                 <div className={styles.fun}>
