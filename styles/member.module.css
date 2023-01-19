@@ -30,15 +30,13 @@
   max-width: 500px;
   overflow-y: scroll;
   scroll-snap-align: center;
-
-  .ref
+}
+  /* .ref
   {
     position: absolute;
     height: 250%;
     bottom: 0%;
-  }
-  /* border-top: 0.1px solid var(--majorelle); */
-}
+  } */
 .firstFrame{
   min-height: 100vh;
   min-width: 100vw;

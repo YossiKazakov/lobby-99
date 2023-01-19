@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 import exit from '../images/exit.svg'
+import one from '../images/one.svg'
+import two from '../images/two.svg'
+import three from '../images/three.svg'
+
 import styles from '../styles/modal.module.css';
 
-// This frame shows
+// This is the modal that open with a content on the chosen subject
 export default function Modal({ open, onClose, input }) {
     if (!open) return null;
 
@@ -15,8 +19,23 @@ export default function Modal({ open, onClose, input }) {
                     <Image id='exit' src={exit} alt="close" fill/>
                 </div>
                 <div className={styles.content}>
-                    <p>{input}</p>
+                    <Content section={input[0]} num={one} />
+                    <Content section={input[1]} num={two} />
+                    <Content section={input[2]} num={three} />
                 </div>
             </div>
         </div>
     )}
+
+export const Content = ({ section, num }) => {
+    if (section == "")
+    {return(<></>)}
+    return(<p>
+        <div className={styles.num}>
+            <Image id='number' src={num} alt="" fill/>
+        </div>
+        <div className={styles.section}>
+        { section }
+        </div>
+    </p>)
+}

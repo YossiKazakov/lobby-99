@@ -1,11 +1,19 @@
-import { useState } from "react";
-import { useEffect } from "react";
-
 export default function IndexPage() {
   return (
-    <>
-      <h1>לובי 99<br/>
-        סיכום שנה</h1>
-    </>
+    <span style={{'text-align': 'center', 'line-height': '90vh'}}>
+        <h1>לובי 99 - 
+        סיכום שנה
+        <br/>
+        נטע רפואה
+        <br/>
+        עמית יהב
+        <br/>
+        יובל ברוקשטיין
+        <br/>
+        יוסי קזקוב
+        <br/>
+        עומרי עובדיה
+        </h1>
+    </span>
   )
 }

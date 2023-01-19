@@ -32,7 +32,7 @@
     font-family: 'SimplerPro-Bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.5rem;
     line-height: 100%;
 
     text-align: right;
@@ -52,7 +52,7 @@
     font-family: 'SimplerPro-Black';
     font-style: normal;
     font-weight: 900;
-    font-size: 375%;
+    font-size: 3.5rem;
     line-height: 90%;
 
     text-align: right;
@@ -72,7 +72,7 @@
     font-family: 'SimplerPro-Bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 225%;
+    font-size: 2.5rem;
     line-height: 100%;
 
     text-align: right;
@@ -101,10 +101,12 @@
 
 .number {
     /* border: red solid 1px; */
+    z-index: 1;
     position: absolute;
     font-size: 400%;
     font-family: 'SimplerPro-Black';
-    color: rgb(80, 80, 80);
+    color: #505050;
     top: 36%;
-    right: 3.5%;
+    right: 4%;
+    font-size: 3.8rem;
 }
