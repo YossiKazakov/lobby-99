@@ -1,16 +1,18 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react'
+import { RWebShare } from "react-web-share";
+
 import BackGroundPic from '../images/next-vote-frame/next_vote_background.svg'
 import StarWithLobby from '../images/next-vote-frame/orange_star_with_text_and_link.svg'
 import PurpleBackground from '../images/next-vote-frame/purple_background_for_timer.svg'
 import ShareStar from '../images/next-vote-frame/share_purple_star.svg'
 import Lobby99 from '../images/next-vote-frame/orange_loby99.svg'
 
-import Link from 'next/link';
 import styles from '../styles/nextvote.module.css';
-import React, { useState, useEffect } from 'react'
+
 
 const absoluteTextContent = "מחכים לך בהצבעה";
-const shareLink = "https://lobby99.org.il/"; // To be changed
 const now = new Date();
 const voteDate = new Date(now); // The voteDate variable will change according to the actual date of voting
 voteDate.setDate(voteDate.getDate() + 1); // Right now it just set to tomorrow
@@ -37,7 +39,7 @@ const Countdown = () => {
     return <div>{countdown}</div>
 }
 
-export default function NextVote({ name }) {
+export default function NextVote({ name, id }) {
     return (
         <div className={styles.container}>
             <Image id='backGroundSvg' src={BackGroundPic} alt='background' fill />
@@ -59,7 +61,16 @@ export default function NextVote({ name }) {
                 <Link href="https://lobby99.org.il/"><Image id='lobbystar' src={StarWithLobby} alt='Click Here' fill /></Link>
             </div>
             <div className={styles.purpleStar}>
-                <Link href={shareLink}><Image id='sharestar' src={ShareStar} alt='Click Here' fill /></Link>
+                <RWebShare
+                    data={{
+                    text: "סיכום שנת פעילות של לובי 99 לקראת הצבעת המשקיעים הקרובה",
+                    url: `https://lobby-delta.vercel.app/${id}`,
+                    title: "סיכום שנה - לובי 99",
+                    }}
+                    onClick={() => console.log("shared successfully!")}
+                >
+                                <Image id='sharestar' src={ShareStar} alt='Click Here' fill />
+                </RWebShare>
             </div>
         </div>
     )

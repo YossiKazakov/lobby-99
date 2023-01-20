@@ -55,7 +55,7 @@ export default function Member({ member }) {
                 <Future />
             </div>
             <div className={styles.frame}>
-                <NextVote name={member.name} />
+                <NextVote name={member.name} id={member.id} />
             </div>
         </div>
     )

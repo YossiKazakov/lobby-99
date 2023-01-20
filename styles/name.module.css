@@ -21,7 +21,7 @@
 
     position: absolute;
     left: 0%;
-    bottom: 7%;
+    top: 7%;
     /* border: #FF6D46 dashed 4px; */
 }
 
@@ -31,7 +31,7 @@
 
     position: absolute;
     right: 0%;
-    bottom: 0%;
+    bottom: 1%;
     /* border: #FF6D46 dashed 4px; */
 }
 .date{
@@ -57,7 +57,7 @@
 
 .topsmiley {
     composes: date__left__col;
-    top: 0%;
+    top: -2%;
     /* border: #FF6D46 dashed 4px; */
 }
 
@@ -73,7 +73,7 @@
 
 .textcircle {
     composes: date__right__col;
-    top: 7%;
+    top: 9%;
     /* border: #FF6D46 dashed 4px; */
 }
 
@@ -115,24 +115,24 @@
 
 .years {
     composes: date__right__col;
-    top: 29%;
+    top: 30%;
     /* border: #FF6D46 dashed 4px; */
 }
 
 .months {
     composes: date__left__col;
-    top: 42%;
+    top: 41%;
     /* border: #FF6D46 dashed 4px; */
 }
 
 .days {
-    composes: date__left__col;
-    bottom: 16%;
+    composes: date__right__col;
+    top: 50%;
     /* border: #FF6D46 dashed 4px; */
 }
 .hours {
-    composes: date__right__col;
-    top: 50%;
+    composes: date__left__col;
+    bottom: 18%;
     /* border: #FF6D46 dashed 4px; */
 }
 .minutes {
