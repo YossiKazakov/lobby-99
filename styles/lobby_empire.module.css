@@ -4,12 +4,11 @@
     height: 100%;
     width: 100%;
     background: #FFC4B5;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 
     transition-property: all;
     transition-delay: 0.2s;
@@ -24,15 +23,15 @@
 .paragraph1 {
     /* border: black solid 2px; */
     position: absolute;
-    width: 84.6%;
-    height: 8.5%;
-    left: 8.4615%;
-    top: 20.8%;
+    /* width: 84.6%; */
+    /* height: 8.5%; */
+    right: 6.9%;
+    top: 20%;
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 225%;
     line-height: 100%;
 
     text-align: right;
@@ -44,15 +43,15 @@
 .paragraph2 {
     /* border: greenyellow solid 2px; */
     position: absolute;
-    width: 88.20512820512821%;
-    height: 12.793755364832135%;
-    left: 4.615384615384615%;
+    /* width: 100%;
+    height: 12.793755364832135%; */
+    right: 6.9%;
     top: 31.120468277945624%;
 
     font-family: 'SimplerPro-Black';
     font-style: normal;
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: 320%;
     line-height: 90%;
 
     text-align: right;
@@ -64,15 +63,15 @@
 .paragraph3 {
     /* border: red solid 2px; */
     position: absolute;
-    width: 84.6%;
-    height: 8.5%;
-    left: 8.4615%;
+    /* width: 84.6%;
+    height: 8.5%; */
+    right: 6.9%;
     top: 45.7%;
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 225%;
     line-height: 100%;
 
     text-align: right;

@@ -46,13 +46,13 @@ export default function Name({ name, join_at }) {
     
     return (
         <div className={`${styles.container} ${elementIsVisible ? styles.bg : ''}`}>
-
-                <div className={styles.leftcol}>
-                    <Image id='left' src={smileyLeft} alt="smiley" fill/>
-                </div>
-                <div className={styles.rightcol}>
-                    <Image id='right' src={smileyRight} alt="smiley" fill/>
-                </div>
+            <div className={styles.leftcol}>
+                <Image id='left' src={smileyLeft} alt="smiley" fill/>
+            </div>
+            <div className={styles.rightcol}>
+                <Image id='right' src={smileyRight} alt="smiley" fill/>
+            </div>
+            <div className={styles.inner}>
                 <div ref={ref} className={styles.topsmiley}>
                     <Image id='smiley' src={smiley} alt="smiley" fill/>
                 </div>
@@ -64,7 +64,7 @@ export default function Name({ name, join_at }) {
                         <Image id='textcircle' src={nameBg} alt={name} fill/>
                         {/* adjust the name size to match it's container size */}
                         <div className={styles.textname}> 
-                            <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={90} fontSizePrecisionPx={0.1}> { name } </AutoTextSize>
+                            <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={40} fontSizePrecisionPx={0.1}> { name } </AutoTextSize>
                         </div>
                         {/* ######### */}
                     </div>
@@ -88,6 +88,7 @@ export default function Name({ name, join_at }) {
                 <div className={styles.seconds}>
                     < DateComp num={seconds} dateImg={secondsImg} />
                 </div>
+            </div>
         </div>
         )}
 

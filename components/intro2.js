@@ -5,8 +5,9 @@ export default function Intro2({ name }) {
         <div className={styles.container}>
             <div className={styles.text1}>
                 {","}{name}<br />
-                <span style={{ color: 'rgb(252, 101, 60)' }}>רצינו לומר לך</span><br />
-                <span className={styles.bigText}>.תודה</span>
+                <span style={{ color: 'rgb(252, 101, 60)' }}>רצינו לומר לך</span>
+                {/* <br /> */}
+                <div className={styles.bigText}>.תודה</div>
             </div>
             <div className={styles.text2}>
                 על שנה של

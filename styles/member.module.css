@@ -1,4 +1,5 @@
 .container{
+  position: relative;
   height: 100vh;
   width: 100vw;
   max-width: 500px;
@@ -25,33 +26,25 @@
 }
 
 .frame{
+  /* position: absolute; */
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   max-width: 500px;
   overflow-y: scroll;
   scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  /* .ref
-  {
-    position: absolute;
-    height: 250%;
-    bottom: 0%;
-  } */
+
 .firstFrame{
   min-height: 100vh;
   min-width: 100vw;
   max-width: 500px;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center;
-  align-self: center; */
   transition: 1s ease-in-out;
   transform: translateY(-100%);
   overflow-y: scroll;
   scroll-snap-align: center;
-
-
-  /* border-top: 0.1px solid var(--majorelle); */
 }
 
 .hidden {

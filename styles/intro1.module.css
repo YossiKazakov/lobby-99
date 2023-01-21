@@ -29,12 +29,11 @@
     text-align: right;
     letter-spacing: 0.05em;
     color: #FC653C;
+    /* border: purple solid 2px; */
+    right: 7.2%;
+    top: 17%;
+    font-size: 360%;
 
-    width: 85.64%;
-    height: 40.37%;
-    left: 7.18%;
-    top: 27.02%;
-    font-size: 406.25%;
 }
 
 .downArrow {
@@ -42,7 +41,7 @@
     position: absolute;
     height: 3.08%;
     width: 12.82%;
-    top: 94.6%;
+    bottom: 11%;
 }
 
 .circles {
@@ -50,8 +49,8 @@
     position: absolute;
     height: 18.6%;
     width: 8.77%;
-    top: 78.5%;
-    left: 86.4%;
+    bottom: 10%;
+    right: 7.2%;
 }
 
 /* .text {

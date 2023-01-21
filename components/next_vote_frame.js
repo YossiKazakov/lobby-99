@@ -42,6 +42,7 @@ const Countdown = () => {
 export default function NextVote({ name, id }) {
     return (
         <div className={styles.container}>
+            <div className={styles.inner}>
             <Image id='backGroundSvg' src={BackGroundPic} alt='background' fill />
             <div className={styles.textAndTime}>
                 <div className={styles.text}>
@@ -71,6 +72,7 @@ export default function NextVote({ name, id }) {
                 >
                                 <Image id='sharestar' src={ShareStar} alt='Click Here' fill />
                 </RWebShare>
+            </div>
             </div>
         </div>
     )

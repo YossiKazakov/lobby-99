@@ -10,6 +10,17 @@
     margin: 0;
     padding: 0;
 }
+.inner{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    max-width: 400px;
+    /* border: green solid 3px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .textAndTime {
     /* border: green solid 3px; */
     position: absolute;
@@ -18,6 +29,7 @@
     justify-content: center;
     height: 50%;
     width: 100%;
+    max-width: 347px;
 }
 
 .text {

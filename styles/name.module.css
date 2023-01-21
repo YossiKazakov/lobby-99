@@ -9,12 +9,21 @@
     transition-property: all;
     transition-delay: 0.5s;
     transition-duration: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bg{
     background: #FBFFDA;
 }
-
+.inner{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    max-width: 400px;
+    /* border: green solid 3px; */
+}
 .leftcol {
     height: 85%;
     width: 20%;
@@ -79,7 +88,7 @@
 
 .textname {
     position: relative;
-    width: 50%;
+    width: 40%;
     /* right: 5%; */
     /* maybe dont needed: */
     bottom: 2.5%;
