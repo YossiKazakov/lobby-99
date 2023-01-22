@@ -8,14 +8,16 @@
     justify-content: center;
 
     transition-property: all;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
     transition-duration: 2s;
 }
 
 .bg{
     background: #C1C1C1;
 }
-
+.pinkBackground {
+    background: #FFC4B5;
+}
 .subject1{
     position: absolute;
     width: 60%;

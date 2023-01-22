@@ -21,7 +21,7 @@ export default function Acts() {
     const [content, setContent] = useState("");
 
     return (
-        <div className={`${styles.container} ${elementIsVisible ? styles.bg : ''}`}>
+        <div className={`${styles.container} ${elementIsVisible ? styles.bg : styles.pinkBackground}`}>
             {/* subject 1 */}
             <div ref={ref} className={styles.subject1}>
                 <Subject title={subjects[0]["title"]} content={subjects[0]["content"]} setOpenModal={setOpenModal} setContent={setContent}/>

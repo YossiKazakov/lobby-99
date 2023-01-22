@@ -14,7 +14,9 @@ import Equal from './equal';
 import Future from './future';
 import NextVote from './next_vote_frame';
 import LobbyEmpire from './lobby_empire';
-import Unregular from './unregular'
+import Unregular from './unregular';
+import Makaf from './ha_makaf';
+import Votes from './votes_stats'
 
 
 import Acts from './acts';
@@ -26,7 +28,7 @@ export default function Member({ member }) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }, 1300);
     }, []);
-
+    console.log(member)
 
     return (
         <div className={styles.container}>
@@ -47,6 +49,12 @@ export default function Member({ member }) {
             </div>
             <div className={styles.frame}>
                 <Acts />
+            </div>
+            <div className={styles.frame}>
+                <Makaf />
+            </div>
+            <div className={styles.frame}>
+                <Votes />
             </div>
             <div className={styles.frame}>
                 <Name name={member.name} join_at={member.join_at} />

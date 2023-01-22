@@ -1,15 +1,15 @@
 import { useInView } from 'react-intersection-observer';
 import styles from '../styles/intro1.module.css';
 import Image from 'next/image';
-import OneOurOfFourCircles from '../images/one_out_of_four_circles.svg'
+import TwoOurOfFourCircles from '../images/two_out_of_four_circles.svg'
 
 
 // This frame shows
-export default function Intro1() {
+export default function Unregular() {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce:'true'});
 
     return (
-        <div className={`${styles.container} ${elementIsVisible ? styles.bg : ''}`}>
+        <div className={`${styles.container} ${elementIsVisible ? styles.bg : styles.greyBackground}`}>
             <div ref={ref} className={styles.text}>
                 השנה<br />
                 ההשקעה<br />
@@ -20,7 +20,7 @@ export default function Intro1() {
                 מאיתנו
             </div>
             <div className={styles.circles}>
-                <Image src={OneOurOfFourCircles} alt="1/4" fill />
+                <Image src={TwoOurOfFourCircles} alt="2/4" fill />
             </div>
         </div>
     )

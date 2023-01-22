@@ -16,7 +16,13 @@
 .bg {
     background: #FFC4B5;
 }
+.greyBackground{
+    background: rgb(193, 193, 193);
+}
 
+.blackBackground {
+    background: rgb(30, 30, 30);
+}
 
 .text {
     align-self: center;
@@ -53,18 +59,3 @@
     right: 7.2%;
 }
 
-/* .text {
-    align-self: center;
-    position: absolute;
-    top: 30%;
-    right: 7%;
-    font-family: 'COLBO';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 4em;
-    line-height: 88%;
-
-    text-align: right;
-    letter-spacing: 0.05em;
-    color: #FC653C;
-} */

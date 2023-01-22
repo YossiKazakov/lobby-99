@@ -7,7 +7,7 @@
     /* border: #FF6D46 dashed 4px; */
 
     transition-property: all;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
     transition-duration: 2s;
     display: flex;
     align-items: center;
@@ -17,6 +17,9 @@
 .bg{
     background: #FBFFDA;
 }
+
+
+
 .inner{
     position: relative;
     height: 90%;
