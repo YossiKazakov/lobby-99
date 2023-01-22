@@ -17,6 +17,7 @@ import LobbyEmpire from './lobby_empire';
 import Unregular from './unregular';
 import Makaf from './ha_makaf';
 import Votes from './votes_stats'
+import YourMoment from './your_moment'
 
 
 import Acts from './acts';
@@ -55,6 +56,9 @@ export default function Member({ member }) {
             </div>
             <div className={styles.frame}>
                 <Votes />
+            </div>
+            <div className={styles.frame}>
+                <YourMoment />
             </div>
             <div className={styles.frame}>
                 <Name name={member.name} join_at={member.join_at} />
