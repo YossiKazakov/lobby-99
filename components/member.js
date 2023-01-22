@@ -44,6 +44,9 @@ export default function Member({ member }) {
                 <LobbyEmpire />
             </div>
             <div className={styles.frame}>
+                <Unregular />
+            </div>
+            <div className={styles.frame}>
                 <Name name={member.name} join_at={member.join_at} />
             </div>
             <div className={styles.frame}>
@@ -57,8 +60,6 @@ export default function Member({ member }) {
             <div className={styles.frame}>
                 <Future />
             </div>
-
-
             <div className={styles.frame}>
                 <NextVote name={member.name} />
             </div>

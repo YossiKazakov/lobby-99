@@ -28,6 +28,7 @@
     height: 8.5%;
     left: 8.4615%;
     top: 20.8%;
+    /* top: 15%; */
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
@@ -48,6 +49,7 @@
     height: 12.793755364832135%;
     left: 4.615384615384615%;
     top: 31.120468277945624%;
+    /* top: 26%; */
 
     font-family: 'SimplerPro-Black';
     font-style: normal;
@@ -68,6 +70,7 @@
     height: 8.5%;
     left: 8.4615%;
     top: 45.7%;
+    /* top: 50%; */
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
@@ -86,6 +89,7 @@
     width: 16.65%;
     left: 19.3%;
     top: 52.95%;
+    /* top: 48%; */
 }
 
 .investers {
