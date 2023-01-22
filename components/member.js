@@ -10,9 +10,8 @@ import Intro2 from './intro2';
 
 
 import Name from './name';
-import Unique from './unique';
+import Equal from './equal';
 import Future from './future';
-import Connector from './theconnector';
 import NextVote from './next_vote_frame';
 import LobbyEmpire from './lobby_empire';
 import Unregular from './unregular'
@@ -47,24 +46,19 @@ export default function Member({ member }) {
                 <Unregular />
             </div>
             <div className={styles.frame}>
+                <Acts />
+            </div>
+            <div className={styles.frame}>
                 <Name name={member.name} join_at={member.join_at} />
             </div>
             <div className={styles.frame}>
-                <Unique />
+                <Equal />
             </div>
-
-            <div className={styles.frame}>
-                <Connector />
-            </div>
-
             <div className={styles.frame}>
                 <Future />
             </div>
             <div className={styles.frame}>
-                <NextVote name={member.name} />
-            </div>
-            <div className={styles.frame}>
-                <Acts />
+                <NextVote name={member.name} id={member.id} />
             </div>
         </div>
     )

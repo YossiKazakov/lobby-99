@@ -1,4 +1,3 @@
-
 .container{
     position: relative;
     box-sizing: border-box;
@@ -19,48 +18,104 @@
 
 .subject1{
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 15%;
-    top: 40%;
+    top: 10%;
+    right: 10%;
     /* border: black dashed 3px ; */
 }
+
+.subject2{
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    top: 25%;
+    left: 10%;
+    /* border: black dashed 3px ; */
+    transform: rotate(-5deg);
+}
+
+.subject3{
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    top: 40%;
+    right: 10%;
+    /* border: black dashed 3px ; */
+}
+
+.subject4{
+    position: absolute;
+    width: 60%;
+    height: 15%;
+    top: 55%;
+    left: 10%;
+    /* border: black dashed 3px ; */
+    transform: rotate(-5deg);
+}
+
+.subject5{
+    position: absolute;
+    width: 55%;
+    height: 15%;
+    top: 70%;
+    right: 10%;
+    /* border: black dashed 3px ; */
+}
+
 .subject{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0%;
-    /* border: yellow dashed 3px ; */
+    /* border: black dashed 3px ; */
 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .subjectTitle{
-    font-family: 'SimplerPro';
+    font-family: 'SimplerPro-Regular';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.6em;
-    line-height: 89%;
+    font-size: 140%;
+    /* line-height: 89%; */
     /* or 20px */
-    
+    /* position: relative; */
+    width: 95%;
+    height: 50%;
     text-align: center;
     letter-spacing: 0.02em;
-    
+    /* border: pink dashed 3px ; */
+    padding: 0;
     color: #6B53FF;
-    
-    transform: rotate(2.73deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(4deg);
     z-index: 1;
 }
 
 .modalButton {
     position: absolute;
-    bottom: 0%;
+    bottom: -1%;
     left: 10%;
     height: 20%;
     width: 20%;
+    transform: rotate(5deg);
+    /* border: red dashed 3px ; */
+}
+
+.click{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    height: 15%;
+    width: 30%;
+    transform: rotate(5deg);
     /* border: red dashed 3px ; */
 
 }
-
-  

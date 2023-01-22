@@ -1,27 +1,25 @@
-// this is the actual page for each lobby member
+// here we are reading the members data from the database and allocating a page for each member
+
 import { MEMBERS_TABLE_NAME } from "../config";
 import { client } from "../database";
 import Member from "../components/member";
 
 const MemberDetails = ({ member }) => {
-  // console.log({ member });
-  // console.log("this is num!!!" , num)
-
   return (
     <Member member={member} />
   );
 };
 
 export const getStaticPaths = async () => {
-  let paths = [ // ***** default in case having troubles reading from the supabase
+  // ****** default in case having troubles reading from the supabase
+  let paths = [
     {
       params: {
         id: '1'
       }
     },
   ];
-
-
+  // ****
 
   const { data } = await client.from(MEMBERS_TABLE_NAME).select("id");
   if (data != null) {
@@ -31,15 +29,14 @@ export const getStaticPaths = async () => {
       },
     }));
   }
-  console.log(paths)
   return {
     paths,
     fallback: false,
   };
 };
 
-export const getStaticProps = async ({ params: { id } }) => { // Maybe hash the id
-  let member = { 'id': 1, 'name': 'עמית' }; // ****** default in case having troubles reading from the supabase  
+export const getStaticProps = async ({ params: { id } }) => {
+  let member = { 'id': 1, 'name': 'עמית' }; // ****** default in case having troubles reading from the supabase 
 
   const { data } = await client.from(MEMBERS_TABLE_NAME)
     .select("*")

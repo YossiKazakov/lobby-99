@@ -1,0 +1,70 @@
+.container{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #FBFFDA;
+    /* border: #FF6D46 dashed 4px; */
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.main{
+    height: 40%;
+    width: 80%;
+
+    position: absolute;
+    bottom: 18%;
+    /* border: #6249FF dashed 4px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spin{
+    /* animation-delay: 1s; */
+    animation-duration: 10s;
+    animation-name: animate-spin;
+
+}
+.text1{
+  position: absolute;
+  top: 19.08%;
+  
+  font-family: 'COLBO';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 100%;
+  /* or 45px */
+  
+  text-align: right;
+  letter-spacing: 0.09em;
+  
+  color: #FC653C;
+}
+
+  
+  @keyframes animate-spin {
+    0% {
+      transform: rotate(5deg);
+    }
+    20% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(5deg);
+    }
+    60% {
+      transform: rotate(-5deg);
+    }
+    80% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }

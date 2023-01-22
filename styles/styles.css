@@ -1,7 +1,3 @@
-/* 
-const gretabold = localFont({ src: '../fonts/GretaSansH+L-Bold.otf' })
-const gretareg = localFont({ src: '../fonts/GretaSansH+L-Regular.otf' }) */
-
 @font-face {
   font-family: "SimplerPro-Black";
   src: url('../fonts/SimplerPro-Black.otf');

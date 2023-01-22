@@ -7,9 +7,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="truenpm"/>
-            <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="סיכום שנה - לובי 99" />
+        <meta property="og:image" content="https://lobby99.org.il/wp-content/uploads/2018/07/lobby99-logo-square-300x298.jpg" />
+        <meta property="og:url" content="https://lobby-delta.vercel.app/1" />
+        <meta property="og:type" content="website" />
       </Head>
       <body>
         <Main />

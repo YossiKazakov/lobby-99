@@ -4,12 +4,11 @@
     height: 100%;
     width: 100%;
     background: #FFC4B5;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 
     transition-property: all;
     transition-delay: 0.2s;
@@ -28,12 +27,11 @@
     height: 8.5%;
     left: 8.4615%;
     top: 20.8%;
-    /* top: 15%; */
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 225%;
     line-height: 100%;
 
     text-align: right;
@@ -45,16 +43,16 @@
 .paragraph2 {
     /* border: greenyellow solid 2px; */
     position: absolute;
-    width: 88.20512820512821%;
-    height: 12.793755364832135%;
-    left: 4.615384615384615%;
+    /* width: 100%;
+    height: 12.793755364832135%; */
+    right: 6.9%;
     top: 31.120468277945624%;
     /* top: 26%; */
 
     font-family: 'SimplerPro-Black';
     font-style: normal;
     font-weight: 900;
-    font-size: 375%;
+    font-size: 320%;
     line-height: 90%;
 
     text-align: right;
@@ -66,9 +64,9 @@
 .paragraph3 {
     /* border: red solid 2px; */
     position: absolute;
-    width: 84.6%;
-    height: 8.5%;
-    left: 8.4615%;
+    /* width: 84.6%;
+    height: 8.5%; */
+    right: 6.9%;
     top: 45.7%;
     /* top: 50%; */
 
@@ -105,10 +103,12 @@
 
 .number {
     /* border: red solid 1px; */
+    z-index: 1;
     position: absolute;
     font-size: 400%;
     font-family: 'SimplerPro-Black';
-    color: rgb(80, 80, 80);
+    color: #505050;
     top: 36%;
-    right: 3.5%;
+    right: 4%;
+    font-size: 3.8rem;
 }
