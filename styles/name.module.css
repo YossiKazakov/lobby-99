@@ -114,10 +114,10 @@
     font-family: 'CosHalavDfus';
     font-style: normal;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     letter-spacing: 0.02rem;
-    color: #6B53FF;
+    color: #FBFFDA;
     transform: rotate(0.01deg);
     
     position: relative;
@@ -156,7 +156,9 @@
 .seconds {
     composes: date__left__col;
     bottom: 0%;
-    /* border: #FF6D46 dashed 4px; */
+    /* border: #FF6D46 dashed 1px; */
+    width: 33%;
+    left: 16%;
 }
 
 .hidden1 {

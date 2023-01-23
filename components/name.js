@@ -64,7 +64,7 @@ export default function Name({ name, join_at }) {
                         <Image id='textcircle' src={nameBg} alt={name} fill/>
                         {/* adjust the name size to match it's container size */}
                         <div className={styles.textname}> 
-                            <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={40} fontSizePrecisionPx={0.1}> { name } </AutoTextSize>
+                            <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={35} fontSizePrecisionPx={0.1} style={{color: '#FBFFDA'}}> { name } </AutoTextSize>
                         </div>
                         {/* ######### */}
                     </div>
