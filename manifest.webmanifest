@@ -3,10 +3,10 @@
     "name": "99 לובי",
     "short_name": "לובי 99",
     "description": "המקף שמחבר בין ההמון לשלטון",
-    "start_url": "/?homescreen=1",
+    "start_url": "/1",
     "background_color": "#FFC0CB",
     "theme_color": "#F2D2BD",
-    "display": "fullscreen",
+    "display": "standalone",
     "icons": [{
       "src": "icon.png",
       "sizes": "256x256",

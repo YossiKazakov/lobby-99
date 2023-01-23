@@ -12,7 +12,8 @@ export default function Document() {
         <meta property="og:url" content="https://lobby-delta.vercel.app" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="he_IL" />
-        <meta name="theme-color" content="red" />
+        <meta name="theme-color" content="#FFC4B5" />
+        <meta name="display" content="fullscreen" />
         <link rel="manifest" href="manifest.webmanifest" />
       </Head>
       <body>
