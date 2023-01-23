@@ -18,6 +18,7 @@ import Unregular from './unregular';
 import Makaf from './ha_makaf';
 import Votes from './votes_stats'
 import YourMoment from './your_moment'
+import PersonalStats from './personal_stats'
 
 
 import Acts from './acts';
@@ -67,7 +68,7 @@ export default function Member({ member }) {
                 <Equal />
             </div>
             <div className={styles.frame}>
-                <Future />
+                <PersonalStats numVotes={member.num_votes} />
             </div>
             <div className={styles.frame}>
                 <NextVote name={member.name} id={member.id} />

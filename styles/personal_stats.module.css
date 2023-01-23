@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #FBFFDA;
+    display: flex;
+    justify-content: center;
+}
+
+.firstText {
+    position: absolute;
+    width: 65%;
+    height: 20%;
+    top: 20%;
+
+    font-family: 'CosHalavDfus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 312%;
+    line-height: 81.5%;
+    /* or 41px */
+
+    text-align: center;
+    letter-spacing: 0.015em;
+
+    color: #FC653C;
+}
+
+.secondText {
+    position: absolute;
+    width: 75%;
+    height: 10%;
+    top: 45%;
+
+    font-family: 'CosHalavDfus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 312%;
+    line-height: 80%;
+    /* or 40px */
+
+    text-align: center;
+    letter-spacing: 0.015em;
+
+    color: #6B53FF;
+}
+
+.exclamationStar {
+    /* border: green solid 3px; */
+    position: absolute;
+    height: 30%;
+    width: 60%;
+    top: 55%;
+}
