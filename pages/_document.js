@@ -17,8 +17,8 @@ export default function Document() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="display" content="fullscreen" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/icon.png" sizes="16X16" />
+        <link rel="manifest" href="https://lobby-delta.vercel.app/manifest.json" />
+        <link rel="icon" href="https://lobby-delta.vercel.app/icon.png" sizes="16X16" />
 
       </Head>
       <body>
