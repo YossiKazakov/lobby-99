@@ -18,8 +18,6 @@
     background: #FBFFDA;
 }
 
-
-
 .inner{
     position: relative;
     height: 90%;
@@ -27,28 +25,9 @@
     max-width: 400px;
     /* border: green solid 3px; */
 }
-.leftcol {
-    height: 85%;
-    width: 20%;
-
-    position: absolute;
-    left: 0%;
-    top: 7%;
-    /* border: #FF6D46 dashed 4px; */
-}
-
-.rightcol {
-    height: 100%;
-    width: 20%;
-
-    position: absolute;
-    right: 0%;
-    bottom: 1%;
-    /* border: #FF6D46 dashed 4px; */
-}
 .date{
-    height: 20%;
-    width: 50%;
+    height: 25%;
+    width: 45%;
     /* border: #FF6D46 dashed 4px; */
     position: absolute;
     display: flex;
@@ -58,34 +37,87 @@
 
 .date__right__col{
     composes: date;
-    right: 8%;
+    right: 10%;
 }
 
 .date__left__col{
     composes: date;
-    left: 7%;
+    left: 11.5%;
 }
 
+.left__col{
+    composes: date;
+    left: -23%;
+}
 
+.right__col{
+    composes: date;
+    right: -23%;
+}
+
+.left1{
+    composes: left__col;
+    top: 0;
+}
+.left2{
+    composes: left__col;
+    top: 20%;
+}
+.left3{
+    composes: left__col;
+    top: 40%;
+}
+.left4{
+    composes: left__col;
+    top: 60%;
+}
+.left5{
+    composes: left__col;
+    top: 80%;
+}
+.right1{
+    composes: right__col;
+    top: -11%;
+}
+.right2{
+    composes: right__col;
+    top: 11%;
+}
+.right3{
+    composes: right__col;
+    top: 31%;
+}
+.right4{
+    composes: right__col;
+    top: 51%;
+}
+.right5{
+    composes: right__col;
+    top: 71%;
+}
 .topsmiley {
     composes: date__left__col;
-    top: 2%;
+    top: -12%;
     /* border: #FF6D46 dashed 4px; */
 }
-
+.bottomsmiley {
+    composes: date__right__col;
+    top: 80%;
+    /* border: #FF6D46 dashed 4px; */
+}
 .fun {
     height: 20%;
     width: 35%;
 
     position: absolute;
-    left: 15%;
-    top: 22%;
+    left: 16%;
+    top: 12%;
     /* border: #FF6D46 dashed 4px; */
 }
 
 .textcircle {
     composes: date__right__col;
-    top: 9%;
+    top: 0%;
     /* border: #FF6D46 dashed 4px; */
 }
 
@@ -127,47 +159,42 @@
 
 .years {
     composes: date__right__col;
-    top: 30%;
+    top: 20%;
     /* border: #FF6D46 dashed 4px; */
 }
 
 .months {
     composes: date__left__col;
-    top: 44%;
+    top: 31%;
     /* border: #FF6D46 dashed 4px; */
 }
 
 .days {
     composes: date__right__col;
-    top: 50%;
+    top: 40%;
     /* border: #FF6D46 dashed 4px; */
 }
 .hours {
     composes: date__left__col;
-    bottom: 19%;
+    top: 51%;
     /* border: #FF6D46 dashed 4px; */
 }
 .minutes {
     composes: date__right__col;
-    top: 71%;
+    top: 60%;
     /* border: #FF6D46 dashed 2px; */
 }
 
 .seconds {
     composes: date__left__col;
-    bottom: 2%;
+    top: 71%;
     /* border: #FF6D46 dashed 2px; */
 
 }
 
-.hidden1 {
+.hidden {
     opacity: 0;
-    transition: 1s;
-}
-
-.hidden2 {
-    opacity: 0;
-    transition: 2s;
+    transition: 4s;
 }
 
 .show {

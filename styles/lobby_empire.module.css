@@ -19,6 +19,13 @@
     background: rgb(193, 193, 193);
 }
 
+.inner{
+    position: absolute;
+    top: 0;
+    height: 90%;
+    width: 100%;
+    max-width: 400px;
+}
 
 .paragraph1 {
     /* border: black solid 2px; */
