@@ -157,8 +157,8 @@
     composes: date__left__col;
     bottom: 0%;
     /* border: #FF6D46 dashed 1px; */
-    width: 33%;
-    left: 16%;
+    /* width: 33%;
+    left: 16%; */
 }
 
 .hidden1 {
