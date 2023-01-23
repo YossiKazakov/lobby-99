@@ -69,7 +69,7 @@
 
 .topsmiley {
     composes: date__left__col;
-    top: -2%;
+    /* top: -2%; */
     /* border: #FF6D46 dashed 4px; */
 }
 
@@ -133,7 +133,7 @@
 
 .months {
     composes: date__left__col;
-    top: 41%;
+    top: 44%;
     /* border: #FF6D46 dashed 4px; */
 }
 
@@ -144,21 +144,20 @@
 }
 .hours {
     composes: date__left__col;
-    bottom: 18%;
+    bottom: 19%;
     /* border: #FF6D46 dashed 4px; */
 }
 .minutes {
     composes: date__right__col;
     top: 71%;
-    /* border: #FF6D46 dashed 4px; */
+    /* border: #FF6D46 dashed 2px; */
 }
 
 .seconds {
     composes: date__left__col;
-    bottom: 0%;
-    /* border: #FF6D46 dashed 1px; */
-    /* width: 33%;
-    left: 16%; */
+    bottom: 2%;
+    /* border: #FF6D46 dashed 2px; */
+
 }
 
 .hidden1 {
