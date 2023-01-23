@@ -91,6 +91,7 @@
 
 .textname {
     position: relative;
+    margin-top: 6px;
     width: 40%;
     /* right: 5%; */
     /* maybe dont needed: */
@@ -98,7 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* top: 10%; */
     font-family: 'CosHalavDfus';
     font-style: normal;
     font-weight: 400;
@@ -107,7 +108,7 @@
     color: white;
 
     /* background: #FF6D46; */
-    /* border: #6249FF dashed 4px; */
+    /* border: #6249FF dashed 1px; */
 }
 .number{
     font-family: 'CosHalavDfus';
