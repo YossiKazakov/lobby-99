@@ -14,8 +14,8 @@ export default function Document() {
         <meta property="og:locale" content="he_IL" />
         <meta name="theme-color" content="#FFC4B5" />
         <meta name="display" content="fullscreen" />
-        <link rel="manifest" href="manifest.webmanifest" />
-        <link rel="icon" href="icon.png" sizes="256x256" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/icon.png" sizes="16X16" />
 
       </Head>
       <body>
