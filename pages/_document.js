@@ -15,6 +15,8 @@ export default function Document() {
         <meta name="theme-color" content="#FFC4B5" />
         <meta name="display" content="fullscreen" />
         <link rel="manifest" href="manifest.webmanifest" />
+        <link rel="icon" href="icon.png" sizes="256x256" />
+
       </Head>
       <body>
         <Main />
