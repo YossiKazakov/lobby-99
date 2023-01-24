@@ -154,8 +154,8 @@
     transform: rotate(0.01deg);
     
     position: relative;
-    bottom: 10%;
-    /* border: #6249FF dashed 4px; */
+    bottom: 2.5%;
+    /* border: #6249FF dashed 0.5px; */
 }
 
 .years {

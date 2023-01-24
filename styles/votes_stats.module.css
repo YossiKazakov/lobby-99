@@ -32,7 +32,7 @@
     width: 84.6%;
     height: 8.5%;
     right: 7.2%;
-    top: 6%;
+    top: 4%;
 
     font-family: 'SimplerPro-Bold';
     font-style: normal;
@@ -53,7 +53,7 @@
     height: 10%;
     width: 80%;
     rotate: 1.78deg;
-    top: 17%;
+    top: 14%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -65,7 +65,7 @@
     height: 10%;
     width: 80%;
     rotate: -9.64deg;
-    top: 42%;
+    top: 39%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -77,7 +77,7 @@
     height: 10%;
     width: 80%;
     rotate: -4.59deg;
-    top: 73%;
+    top: 71%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -102,4 +102,16 @@
     color: rgb(107, 83, 255);
     z-index: 1;
     font-size: 200%;
+}
+
+.firstArrow {
+    rotate: 57.47deg;
+    top: 5%;
+    left: 17%;
+}
+
+.secondArrow {
+    rotate: 52.83deg;
+    top: 32%;
+    left: 22%;
 }

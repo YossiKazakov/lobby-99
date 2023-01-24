@@ -17,7 +17,7 @@ export default function VotesStats() {
                 <span style={{ color: 'rgb(107, 83, 255)' }}>בשנה האחרונה<br /></span>
                 השתתפו בהצבעות<br />
             </div>
-            <div className={styles.arrow} style={{ rotate: '57.47deg', top: '5%', left: '17%' }}>
+            <div className={styles.arrow} style={{ rotate: '57.47deg', top: '0%', left: '19%' }}>
                 <Image src={Arrow} alt='arrow' fill />
             </div>
             <div className={styles.whiteBackgroundOne}>
@@ -29,12 +29,12 @@ export default function VotesStats() {
                     מהחברים
                 </div>
             </div>
-            <div className={styles.text} style={{ top: '30%' }}>
+            <div className={styles.text} style={{ top: '27%' }}>
                 בהצבעת הנושאים<br />
                 <span style={{ color: 'rgb(107, 83, 255)' }}>האחרונה </span>
                 הצביעו<br />
             </div>
-            <div className={styles.arrow} style={{ rotate: '52.83deg', top: '32%', left: '22%' }}>
+            <div className={styles.arrow} style={{ rotate: '42.83deg', top: '27%', left: '17%' }}>
                 <Image src={Arrow} alt='arrow' fill />
             </div>
             <div className={styles.whiteBackgroundTwo}>
@@ -46,12 +46,12 @@ export default function VotesStats() {
                     מחברי הלובי
                 </div>
             </div>
-            <div className={styles.text} style={{ top: '55%' }}>
+            <div className={styles.text} style={{ top: '53%' }}>
                 הנושא הנבחר היה<br />
                 <span style={{ color: 'rgb(107, 83, 255)' }}>{chosenSubject}</span><br />
                 לו הצביעו<br />
             </div>
-            <div className={styles.arrow} style={{ rotate: '34.14deg', top: '60%', left: '44%' }}>
+            <div className={styles.arrow} style={{ rotate: '34.14deg', top: '58%', left: '40%' }}>
                 <Image src={Arrow} alt='arrow' fill />
             </div>
             <div className={styles.whiteBackgroundThree}>
