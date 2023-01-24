@@ -8,8 +8,8 @@
     justify-content: center;
 
     transition-property: all;
-    transition-delay: 0.0s;
-    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-duration: 1.2s;
 }
 .bg{
     background: #C1C1C1;

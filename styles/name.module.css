@@ -8,8 +8,8 @@
     overflow: hidden;
 
     transition-property: all;
-    transition-delay: 0.0s;
-    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-duration: 1.2s;
     display: flex;
     align-items: center;
     justify-content: center;
