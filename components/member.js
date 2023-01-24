@@ -11,7 +11,6 @@ import Intro2 from './intro2';
 
 import Name from './name';
 import Equal from './equal';
-import Future from './future';
 import NextVote from './next_vote_frame';
 import LobbyEmpire from './lobby_empire';
 import Unregular from './unregular';
@@ -19,8 +18,6 @@ import Makaf from './ha_makaf';
 import Votes from './votes_stats'
 import YourMoment from './your_moment'
 import PersonalStats from './personal_stats'
-
-
 import Acts from './acts';
 
 export default function Member({ member }) {
@@ -68,7 +65,7 @@ export default function Member({ member }) {
                 <Equal />
             </div>
             <div className={styles.frame}>
-                <PersonalStats numVotes={member.num_votes} />
+                <PersonalStats numOfPersonalVotes={member.num_votes} />
             </div>
             <div className={styles.frame}>
                 <NextVote name={member.name} id={member.id} />

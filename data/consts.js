@@ -5,3 +5,4 @@ export const lastVote = "54%";
 export const chosenSubject = "מאבק בהטעיית הצרכנים";
 export const chosenVote = "32%";
 export const numOfVotes = "12";
+export const minimalThreshold = 0.65
