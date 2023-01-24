@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
 import { RWebShare } from "react-web-share";
 
-import BackGroundPic from '../images/next-vote-frame/next_vote_background.svg'
+import BackGroundPic from '../images/next-vote-frame/next-vote-background.svg'
 import StarWithLobby from '../images/next-vote-frame/orange_star_with_text_and_link.svg'
 import PurpleBackground from '../images/next-vote-frame/purple_background_for_timer.svg'
 import ShareStar from '../images/next-vote-frame/share_purple_star.svg'
@@ -42,8 +42,8 @@ const Countdown = () => {
 export default function NextVote({ name, id }) {
     return (
         <div className={styles.container}>
+                        <Image id='backGroundSvg' src={BackGroundPic} alt='background' fill />
             <div className={styles.inner}>
-            <Image id='backGroundSvg' src={BackGroundPic} alt='background' fill />
             <div className={styles.textAndTime}>
                 <div className={styles.text}>
                     <span>{","}{name}</span><span>{absoluteTextContent}</span>
