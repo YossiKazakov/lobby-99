@@ -22,7 +22,7 @@
     position: absolute;
     width: 80%;
     height: 15%;
-    top: 7%;
+    top: 5%;
     rotate: 5.32deg;
     display: flex;
 }
@@ -31,7 +31,7 @@
     position: absolute;
     width: 80%;
     height: 15%;
-    top: 28%;
+    top: 24%;
     rotate: -0.91deg;
     display: flex;
 }
@@ -40,7 +40,7 @@
     position: absolute;
     width: 80%;
     height: 15%;
-    top: 49%;
+    top: 44%;
     rotate: 7.85deg;
     display: flex;
 }
@@ -49,7 +49,7 @@
     position: absolute;
     width: 80%;
     height: 15%;
-    top: 70%;
+    top: 64%;
     rotate: -5.25deg;
     display: flex;
 }
