@@ -19,6 +19,7 @@ import Votes from './votes_stats'
 import YourMoment from './your_moment'
 import PersonalStats from './personal_stats'
 import Acts from './acts';
+import UpcommingVoteIntro from './upcoming_vote_intro'
 
 export default function Member({ member }) {
     const ref = useRef(null);
@@ -66,6 +67,9 @@ export default function Member({ member }) {
             </div>
             <div className={styles.frame}>
                 <PersonalStats numOfPersonalVotes={member.num_votes} />
+            </div>
+            <div className={styles.frame}>
+                < UpcommingVoteIntro />
             </div>
             <div className={styles.frame}>
                 <NextVote name={member.name} id={member.id} />
