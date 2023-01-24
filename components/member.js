@@ -21,6 +21,7 @@ import PersonalStats from './personal_stats'
 import Acts from './acts';
 import UpcommingVoteIntro from './upcoming_vote_intro'
 import LinkToVote from './link_to_vote'
+import FutureSubjects from './future_subjects'
 
 export default function Member({ member }) {
     const ref = useRef(null);
@@ -71,6 +72,9 @@ export default function Member({ member }) {
             </div>
             <div className={styles.frame}>
                 < UpcommingVoteIntro />
+            </div>
+            <div className={styles.frame}>
+                < FutureSubjects />
             </div>
             <div className={styles.frame}>
                 < LinkToVote />

@@ -6,3 +6,7 @@ export const chosenSubject = "מאבק בהטעיית הצרכנים";
 export const chosenVote = "32%";
 export const numOfVotes = "12";
 export const minimalThreshold = 0.65
+export const futureSubject1 = "מלחמה בשחיתות ברשויות מקומיות";
+export const futureSubject2 = "הפרדת הון שלטון עיתון";
+export const futureSubject3 = "פתיחת שוק הבנקאות לתחרות";
+export const futureSubject4 = "מלחמה במונופול הייבוא";

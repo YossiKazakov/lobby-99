@@ -1,0 +1,73 @@
+.container {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #FFC4B5;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    transition-property: all;
+    transition-delay: 0.2s;
+    transition-duration: 2s;
+}
+
+.bg {
+    background: rgb(193, 193, 193);
+}
+
+.one {
+    /* border: #FF6D46 solid 1px; */
+    position: absolute;
+    width: 80%;
+    height: 15%;
+    top: 7%;
+    rotate: 5.32deg;
+    display: flex;
+}
+
+.two {
+    position: absolute;
+    width: 80%;
+    height: 15%;
+    top: 28%;
+    rotate: -0.91deg;
+    display: flex;
+}
+
+.three {
+    position: absolute;
+    width: 80%;
+    height: 15%;
+    top: 49%;
+    rotate: 7.85deg;
+    display: flex;
+}
+
+.four {
+    position: absolute;
+    width: 80%;
+    height: 15%;
+    top: 70%;
+    rotate: -5.25deg;
+    display: flex;
+}
+
+.text {
+    /* border: purple solid 1px; */
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    left: 5%;
+
+    font-family: 'SimplerPro-Bold';
+    font-size: 175%;
+    line-height: 100%;
+    /* or 28px */
+
+    color: #FF6D46;
+}
