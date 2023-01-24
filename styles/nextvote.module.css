@@ -5,16 +5,17 @@
     width: 100%;
     background: #FBFFDA;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin: 0;
     padding: 0;
 }
 .inner{
-    position: relative;
-    height: 90%;
+    position: absolute;
+    height: 80%;
     width: 100%;
     max-width: 400px;
+    top: 5%;
     /* border: green solid 3px; */
     display: flex;
     align-items: center;
@@ -86,8 +87,9 @@
     position: absolute;
     width: 20%;
     height: 15%;
-    align-self: flex-end;
-    left: 5%;
+    /* align-self: flex-end; */
+    bottom: 3%;
+    left: 8%;
 }
 
 .purpleStar {
@@ -95,7 +97,8 @@
     position: absolute;
     width: 20%;
     height: 15%;
-    align-self: flex-start;
-    right: 5%;
+    /* align-self: flex-start; */
+    top: 3%;
+    right: 8%;
     margin-top: 8%;
 }
