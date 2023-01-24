@@ -12,10 +12,10 @@
 }
 .inner{
     position: absolute;
-    height: 80%;
+    height: 100%; /*Why were here 80?*/
     width: 100%;
     max-width: 400px;
-    top: 5%;
+    /* top: 5%; */ /*Also why?*/
     /* border: green solid 3px; */
     display: flex;
     align-items: center;
