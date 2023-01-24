@@ -63,7 +63,7 @@
     position: absolute;
     width: 40%;
     height: 15%;
-    top: 10%;
+    top: 8%;
     right: 10%;
 }
 
@@ -73,22 +73,25 @@
     width: 65%;
     height: 40%;
     left: 0%;
-    top: 15%;
+    top: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .textInLeftStar {
     /* border: #FC653C solid 3px; */
-    position: absolute;
+    position: relative;
     font-family: 'CosHalavDfus';
     color: white;
-    font-size: 1200%;
-    top: 20%;
-    left: 15%;
+    font-size: 1100%;
+    bottom: 10%;
+    right: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40%;
-    height: 40%;
+    height: 25%;
 
 }
 
@@ -98,22 +101,25 @@
     width: 65%;
     height: 40%;
     right: 0%;
-    top: 35%;
+    top: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .textInRightStar {
     /* border: green solid 3px; */
-    position: absolute;
+    position: relative;
     font-family: 'CosHalavDfus';
     color: white;
     font-size: 1100%;
-    top: 25%;
-    right: 16%;
+    bottom: 6%;
+    left: 12%;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40%;
-    height: 40%;
+    height: 25%;
 }
 
 .middleText{
@@ -121,7 +127,7 @@
     position: absolute;
     width: 40%;
     height: 15%;
-    top: 60%;
+    top: 58%;
     left: 7%;
 }
 
@@ -130,5 +136,5 @@
     position: absolute;
     width: 55%;
     height: 15%;
-    bottom: 10%;
+    bottom: 15%;
 }
