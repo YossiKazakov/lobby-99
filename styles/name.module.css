@@ -5,6 +5,7 @@
     width: 100%;
     background: #FFC4B5;
     /* border: #FF6D46 dashed 4px; */
+    overflow: hidden;
 
     transition-property: all;
     transition-delay: 0.2s;
