@@ -53,7 +53,7 @@
     position: absolute;
     height: 30%;
     width: 60%;
-    top: 55%;
+    top: 52%;
 }
 
 /*Yes Votes*/
@@ -63,7 +63,7 @@
     position: absolute;
     width: 40%;
     height: 15%;
-    top: 4%;
+    top: 2%;
     right: 10%;
 }
 
@@ -73,7 +73,7 @@
     width: 65%;
     height: 40%;
     left: 0%;
-    top: 7%;
+    top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@
     width: 65%;
     height: 40%;
     right: 0%;
-    top: 29%;
+    top: 27%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +113,7 @@
     font-family: 'CosHalavDfus';
     color: white;
     font-size: 1100%;
-    bottom: 4%;
+    bottom: 2%;
     left: 12%;
     display: flex;
     align-items: center;
@@ -127,7 +127,7 @@
     position: absolute;
     width: 40%;
     height: 15%;
-    top: 56%;
+    top: 54%;
     left: 7%;
 }
 

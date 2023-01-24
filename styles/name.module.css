@@ -195,7 +195,7 @@
 
 .hidden {
     opacity: 0;
-    transition: 4s;
+    transition: 2.5s;
 }
 
 .show {

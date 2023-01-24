@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from '../styles/personal_stats.module.css'
-import ExclamationStar from '../images/personal-stats-frame/exclamation_star.svg'
+import ExclamationStar from '../images/personal-stats-frame/exclamation.svg'
 import { numOfVotes, minimalThreshold } from '../data/consts';
 import YouveParticipated from '../images/personal-stats-frame/participates_in.svg'
 import LeftStar from '../images/personal-stats-frame/left_star.svg'
