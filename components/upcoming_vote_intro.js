@@ -9,7 +9,7 @@ export default function UpcommingVoteIntro() {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce:'true'});
 
     return (
-        <div className={`${styles.container} ${elementIsVisible ? styles.bg : styles.greyBackground}`}>
+        <div className={`${styles.container} ${elementIsVisible ? styles.bg : styles.yellowBackground}`}>
             <div ref={ref} className={styles.text} style={{fontSize : '500%'}}>
                 אלו<br />
                 הנושאים<br />

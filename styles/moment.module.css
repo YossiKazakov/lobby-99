@@ -19,6 +19,9 @@
 .greyBackground{
     background: rgb(193, 193, 193);
 }
+.yellowBackground {
+    background: #FBFFDA;
+}
 
 .blackBackground {
     background: rgb(30, 30, 30);
