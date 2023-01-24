@@ -48,7 +48,8 @@
 
 .bigText {
     /* border: #FC653C 3px dashed; */
-    /* position: absolute; */
+    position: relative;
+    right: -1%;
     width: fit-content;
     font-size: 250%;
     line-height: 60%;
