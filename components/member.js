@@ -20,6 +20,7 @@ import YourMoment from './your_moment'
 import PersonalStats from './personal_stats'
 import Acts from './acts';
 import UpcommingVoteIntro from './upcoming_vote_intro'
+import LinkToVote from './link_to_vote'
 
 export default function Member({ member }) {
     const ref = useRef(null);
@@ -70,6 +71,9 @@ export default function Member({ member }) {
             </div>
             <div className={styles.frame}>
                 < UpcommingVoteIntro />
+            </div>
+            <div className={styles.frame}>
+                < LinkToVote />
             </div>
             <div className={styles.frame}>
                 <NextVote name={member.name} id={member.id} />
