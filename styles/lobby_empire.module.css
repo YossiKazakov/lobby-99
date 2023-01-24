@@ -103,18 +103,20 @@
     height: 20%;
     width: 90%;
     top: 63%;
+    left: 3%;
     transform: rotate(351.88deg);
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex; */
+    /* justify-content: flex-end; */
 }
 
 .number {
     /* border: red solid 1px; */
     z-index: 1;
     position: absolute;
-    font-size: 320%;
+    font-size: 325%;
     font-family: 'SimplerPro-Black';
     color: #505050;
     top: 37%;
-    right: 6%;
+    right: 5%;
+    /* font-size: 3.8rem; */
 }
