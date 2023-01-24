@@ -5,16 +5,17 @@
     width: 100%;
     background: #FBFFDA;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin: 0;
     padding: 0;
 }
 .inner{
-    position: relative;
+    position: absolute;
     height: 80%;
     width: 100%;
     max-width: 400px;
+    top: 5%;
     /* border: green solid 3px; */
     display: flex;
     align-items: center;
