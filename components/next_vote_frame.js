@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
 import { RWebShare } from "react-web-share";
 
-import BackGroundPic from '../images/next-vote-frame/next-vote-background.svg'
+import BackGroundPic from '../images/next-vote-frame/next-vote-background1.svg'
 import StarWithLobby from '../images/next-vote-frame/orange_star_with_text_and_link.svg'
 import PurpleBackground from '../images/next-vote-frame/purple_background_for_timer.svg'
 import ShareStar from '../images/next-vote-frame/share_purple_star.svg'
