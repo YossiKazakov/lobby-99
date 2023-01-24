@@ -1,4 +1,4 @@
-export const numberOfMembers = "9,439";
+export const numberOfMembers = "10,064";
 export const lobbyYears = "7";
 export const lastYear = "75%";
 export const lastVote = "54%";

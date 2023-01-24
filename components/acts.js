@@ -22,7 +22,7 @@ export default function Acts() {
 
     return (
         <div className={`${styles.container} ${elementIsVisible ? styles.bg : styles.pinkBackground}`}>
-            <div className={styles.inner}>
+            {/* <div className={styles.inner}> */}
                 {/* subject 1 */}
                 <div ref={ref} className={styles.subject1}>
                     <Subject title={subjects[0]["title"]} content={subjects[0]["content"]} setOpenModal={setOpenModal} setContent={setContent}/>
@@ -45,15 +45,18 @@ export default function Acts() {
                 </div>
                 {/* this is the modal that open with every click on a subject */}
                 <Modal open={openModal} onClose={() => setOpenModal(false)} input={content}/>
-                <div className={styles.click}>
-                    <ClickImg content={content} />
-                </div>
-            </div>
+                <ClickImg content={content} />
+            {/* </div> */}
         </div>
     )}
 
 export const ClickImg = ({ content }) => {
     if (content == "")
-    {return(<Image id='click' src={clickHere} alt="click here" fill/>)}
-    return(<Image id='continue' src={continueImg} alt="continue" fill/>)
+    {
+        return(<div className={styles.click}>
+                 <Image id='click' src={clickHere} alt="click here" fill/>
+                 </div>)}
+    return(<div className={styles.continue}>
+                <Image id='continue' src={continueImg} alt="continue" fill/>
+            </div>)
 }
