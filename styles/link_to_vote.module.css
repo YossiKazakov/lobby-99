@@ -20,10 +20,10 @@
 .text {
     /* border: #6B53FF solid 2px; */
     position: absolute;
-    width: 308px;
+    width: 85%;
     height: 198px;
-    left: 46px;
-    top: 143px;
+    /* right: 10%; */
+    top: 20%;
 
     font-family: 'COLBO';
     font-style: normal;
