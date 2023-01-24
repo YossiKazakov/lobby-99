@@ -37,7 +37,7 @@
     color: #FC653C;
     /* border: purple solid 2px; */
     right: 7.2%;
-    top: 17%;
+    top: 10%;
     font-size: 360%;
 
 }
@@ -47,7 +47,7 @@
     position: absolute;
     height: 3.08%;
     width: 12.82%;
-    bottom: 11%;
+    bottom: 21%;
 }
 
 .circles {
@@ -55,7 +55,7 @@
     position: absolute;
     height: 18.6%;
     width: 8.77%;
-    bottom: 10%;
+    bottom: 20%;
     right: 7.2%;
 }
 

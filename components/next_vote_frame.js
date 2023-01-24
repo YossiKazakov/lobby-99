@@ -64,9 +64,9 @@ export default function NextVote({ name, id }) {
             <div className={styles.purpleStar}>
                 <RWebShare
                     data={{
-                    text: "סיכום שנת פעילות של לובי 99 לקראת הצבעת המשקיעים הקרובה",
+                    text: "היי! תראה את הסיכום שנה שהכינו עבורי בלובי 99",
                     url: `https://lobby-delta.vercel.app/${id}`,
-                    title: "סיכום שנה - לובי 99",
+                    title: "לובי 99 - המקף שמחבר בין ההמון לשלטון",
                     }}
                     onClick={() => console.log("shared successfully!")}
                 >

@@ -11,13 +11,19 @@
     transition-delay: 0.2s;
     transition-duration: 2s;
 }
-
 .bg{
     background: #C1C1C1;
 }
-.pinkBackground {
-    background: #FFC4B5;
+
+.inner{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    max-width: 400px;
 }
+/* .pinkBackground {
+    background: #FFC4B5;
+} */
 .subject1{
     position: absolute;
     width: 60%;

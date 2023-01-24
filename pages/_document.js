@@ -8,9 +8,18 @@ export default function Document() {
     <Html>
       <Head>
         <meta property="og:title" content="סיכום שנה - לובי 99" />
-        <meta property="og:image" content="https://lobby99.org.il/wp-content/uploads/2018/07/lobby99-logo-square-300x298.jpg" />
-        <meta property="og:url" content="https://lobby-delta.vercel.app/1" />
+        <meta property="og:image" content="https://lobby-delta.vercel.app/lobbyImg.png" />
+        <meta property="og:url" content="https://lobby-delta.vercel.app" />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="he_IL" />
+        <meta name="theme-color" content="#FFC4B5" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FFC4B5" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="display" content="fullscreen" />
+        <link rel="manifest" href="https://lobby-delta.vercel.app/manifest.json" />
+        <link rel="icon" href="https://lobby-delta.vercel.app/icon.png" sizes="16X16" />
+
       </Head>
       <body>
         <Main />
@@ -19,4 +28,3 @@ export default function Document() {
     </Html>
   )
 }
-

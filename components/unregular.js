@@ -16,8 +16,6 @@ export default function Unregular() {
                 שלך הניבה<br />
                 <span style={{color:'white'}}>הישגים<br /></span> 
                 <span style={{color:'white'}}>בלתי רגילים<br /></span>
-                משהו קטן<br />
-                מאיתנו
             </div>
             <div className={styles.circles}>
                 <Image src={TwoOurOfFourCircles} alt="2/4" fill />
