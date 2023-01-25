@@ -42,37 +42,37 @@ const Countdown = () => {
 export default function NextVote({ name, id }) {
     return (
         <div className={styles.container}>
-                        <Image id='backGroundSvg' src={BackGroundPic} alt='background' fill />
+            <Image id='backGroundSvg' src={BackGroundPic} alt='background' fill />
             <div className={styles.inner}>
-            <div className={styles.textAndTime}>
-                <div className={styles.text}>
-                    <span>{","}{name}</span><span>{absoluteTextContent}</span>
-                </div>
-                <div className={styles.purpleBackground}>
-                    <Image id='purpleBackgroundSvg' src={PurpleBackground} alt='timer' fill />
-                    <div className={styles.time}>
-                        <Countdown />
+                <div className={styles.textAndTime}>
+                    <div className={styles.text}>
+                        <span>{","}{name}</span><span>{absoluteTextContent}</span>
+                    </div>
+                    <div className={styles.purpleBackground}>
+                        <Image id='purpleBackgroundSvg' src={PurpleBackground} alt='timer' fill />
+                        <div className={styles.time}>
+                            <Countdown />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className={styles.orangeLoby}>
-                <Image id='orangelobby' src={Lobby99} alt='Lobby99' fill />
-            </div>
-            <div className={styles.orangeStar}>
-                <Link href="https://lobby99.org.il/"><Image id='lobbystar' src={StarWithLobby} alt='Click Here' fill /></Link>
-            </div>
-            <div className={styles.purpleStar}>
-                <RWebShare
-                    data={{
-                    text: "היי! תראה את הסיכום שנה שהכינו עבורי בלובי 99",
-                    url: `https://lobby-delta.vercel.app/${id}`,
-                    title: "לובי 99 - המקף שמחבר בין ההמון לשלטון",
-                    }}
-                    onClick={() => console.log("shared successfully!")}
-                >
-                                <Image id='sharestar' src={ShareStar} alt='Click Here' fill />
-                </RWebShare>
-            </div>
+                <div className={styles.orangeLoby}>
+                    <Image id='orangelobby' src={Lobby99} alt='Lobby99' fill />
+                </div>
+                <div className={styles.orangeStar}>
+                    <Link href="https://lobby99.org.il/"><Image id='lobbystar' src={StarWithLobby} alt='Click Here' fill /></Link>
+                </div>
+                <div className={styles.purpleStar}>
+                    <RWebShare
+                        data={{
+                            text: "היי! תראה את הסיכום שנה שהכינו עבורי בלובי 99",
+                            url: `https://lobby-delta.vercel.app/${id}`,
+                            title: "לובי 99 - המקף שמחבר בין ההמון לשלטון",
+                        }}
+                        onClick={() => console.log("shared successfully!")}
+                    >
+                        <Image id='sharestar' src={ShareStar} alt='Click Here' fill />
+                    </RWebShare>
+                </div>
             </div>
         </div>
     )
