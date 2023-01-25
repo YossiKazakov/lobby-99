@@ -11,7 +11,7 @@ import Lobby99 from '../images/next-vote-frame/orange_loby99.svg'
 
 import styles from '../styles/nextvote.module.css';
 
-
+const shareText = "השנה לקחתי חלק בהישגים משמעותיים עבור החברה הישראלית יחד עם לובי 99";
 const absoluteTextContent = "מחכים לך בהצבעה";
 const now = new Date();
 const voteDate = new Date(now); // The voteDate variable will change according to the actual date of voting
@@ -64,7 +64,7 @@ export default function NextVote({ name, id }) {
                 <div className={styles.purpleStar}>
                     <RWebShare
                         data={{
-                            text: "היי! תראה את הסיכום שנה שהכינו עבורי בלובי 99",
+                            text: {shareText},
                             url: `https://lobby-delta.vercel.app/${id}`,
                             title: "לובי 99 - המקף שמחבר בין ההמון לשלטון",
                         }}
