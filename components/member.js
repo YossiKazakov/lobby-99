@@ -24,7 +24,7 @@ export default function Member({ member }) {
     useEffect(() => {
         setTimeout(() => {
             ref.current.scrollIntoView({ behavior: 'smooth' });
-        }, 1300);
+        }, 3500); //time passes by 
     }, []);
     // console.log(member)
 
