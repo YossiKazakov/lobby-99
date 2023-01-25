@@ -18,7 +18,7 @@ import styles from '../styles/name.module.css';
 // This frame shows the lobby member name and the time that paseed sience he joiend to lobby
 
 export default function Name({ name, join_at }) {
-    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: false});
+    const { ref: ref, inView: elementIsVisible } = useInView({ triggerOnce: false });
     const [seconds, setSeconds] = useState();
     const [minutes, setMinutes] = useState();
     const [hours, setHours] = useState();
@@ -41,56 +41,62 @@ export default function Name({ name, join_at }) {
         return () => clearInterval(intervalId);
     }, []);
 
-    
+
     return (
         <div className={`${styles.container} ${elementIsVisible ? styles.bg : ''}`}>
             <div className={styles.inner}>
+                <div className={styles.left0}>
+                    <Image id="left0" src={smiley} alt="smiley" fill />
+                </div>
                 <div className={styles.left1}>
-                    <Image id="left1" src={smiley} alt="smiley" fill/>
+                    <Image id="left1" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.left2}>
-                    <Image id="left2" src={smiley} alt="smiley" fill/>
+                    <Image id="left2" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.left3}>
-                    <Image id="left3" src={smiley} alt="smiley" fill/>
+                    <Image id="left3" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.left4}>
-                    <Image id="left4" src={smiley} alt="smiley" fill/>
+                    <Image id="left4" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.left5}>
-                    <Image id="left5" src={smiley} alt="smiley" fill/>
+                    <Image id="left5" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.right1}>
-                    <Image id="right1" src={smiley} alt="smiley" fill/>
+                    <Image id="right1" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.right2}>
-                    <Image id="right2" src={smiley} alt="smiley" fill/>
+                    <Image id="right2" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.right3}>
-                    <Image id="right3" src={smiley} alt="smiley" fill/>
+                    <Image id="right3" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.right4}>
-                    <Image id="right4" src={smiley} alt="smiley" fill/>
+                    <Image id="right4" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.right5}>
-                    <Image id="right5" src={smiley} alt="smiley" fill/>
+                    <Image id="right5" src={smiley} alt="smiley" fill />
                 </div>
                 <div className={styles.topsmiley}>
-                    <Image id='smiley' src={smiley} alt="smiley" fill/>
+                    <Image id='smiley' src={smiley} alt="smiley" fill />
+                </div>
+                <div className={styles.topsmileyabovename}>
+                    <Image id='smiley' src={smiley} alt="smiley" fill />
                 </div>
                 <div ref={ref} className={styles.bottomsmiley}>
-                    <Image id='smiley' src={smiley} alt="smiley" fill/>
+                    <Image id='smiley' src={smiley} alt="smiley" fill />
                 </div>
                 <div className={`${styles.hidden} ${elementIsVisible ? styles.show : ''}`}>
                     <div className={styles.fun}>
-                        <Image id='fun' src={fun} alt="how much fun" fill/>
+                        <Image id='fun' src={fun} alt="how much fun" fill />
                     </div>
                 </div>
                 <div className={styles.textcircle}>
-                    <Image id='textcircle' src={nameBg} alt={name} fill/>
+                    <Image id='textcircle' src={nameBg} alt={name} fill />
                     {/* adjust the name size to match it's container size */}
-                    <div className={styles.textname}> 
-                        <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={55} fontSizePrecisionPx={0.1} style={{color: '#FBFFDA'}}> { name } </AutoTextSize>
+                    <div className={styles.textname}>
+                        <AutoTextSize mode="oneline" minFontSizePx={0} maxFontSizePx={55} fontSizePrecisionPx={0.1} style={{ color: '#FBFFDA' }}> {name} </AutoTextSize>
                     </div>
                     {/* ######### */}
                 </div>
@@ -115,12 +121,13 @@ export default function Name({ name, join_at }) {
                 </div>
             </div>
         </div>
-        )}
+    )
+}
 
 export const DateComp = ({ num, dateImg }) => {
-    if (num == 0) {return(<Image id='smiley' src={smiley} alt="" fill/>)}
-    return(<>
-        <Image id='date' src={dateImg} alt="" fill/>
-        <div className={styles.number}>{ num }</div>
+    if (num == 0) { return (<Image id='smiley' src={smiley} alt="" fill />) }
+    return (<>
+        <Image id='date' src={dateImg} alt="" fill />
+        <div className={styles.number}>{num}</div>
     </>)
 }

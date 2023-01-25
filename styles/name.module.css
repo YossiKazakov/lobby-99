@@ -15,18 +15,19 @@
     justify-content: center;
 }
 
-.bg{
+.bg {
     background: #FBFFDA;
 }
 
-.inner{
+.inner {
     position: relative;
     height: 81%;
     width: 100%;
     max-width: 400px;
     /* border: green solid 3px; */
 }
-.date{
+
+.date {
     height: 25%;
     width: 45%;
     /* border: #FF6D46 dashed 4px; */
@@ -36,79 +37,103 @@
     align-items: center;
 }
 
-.date__right__col{
+.date__right__col {
     composes: date;
     right: 10%;
 }
 
-.date__left__col{
+.date__left__col {
     composes: date;
     left: 11.5%;
 }
 
-.left__col{
+.left__col {
     composes: date;
     left: -23%;
 }
 
-.right__col{
+.right__col {
     composes: date;
     right: -23%;
 }
 
-.left1{
+.left0 {
+    composes: left__col;
+    top: -20%;
+    /* border: black solid 1px; */
+}
+
+.left1 {
     composes: left__col;
     top: 0;
     /* border: black solid 1px; */
 }
-.left2{
+
+.left2 {
     composes: left__col;
     top: 20%;
 }
-.left3{
+
+.left3 {
     composes: left__col;
     top: 40%;
 }
-.left4{
+
+.left4 {
     composes: left__col;
     top: 60%;
 }
-.left5{
+
+.left5 {
     composes: left__col;
     top: 80%;
 }
-.right1{
+
+.right1 {
     composes: right__col;
     top: -11%;
 }
-.right2{
+
+.right2 {
     composes: right__col;
     top: 11%;
 }
-.right3{
+
+.right3 {
     composes: right__col;
     top: 31%;
     /* border: black solid 1px; */
 
 }
-.right4{
+
+.right4 {
     composes: right__col;
     top: 51%;
 }
-.right5{
+
+.right5 {
     composes: right__col;
     top: 71%;
 }
+
+.topsmileyabovename {
+    composes: date__right__col;
+    top: -20%;
+    /* border: #FF6D46 dashed 0.5px; */
+}
+
 .topsmiley {
     composes: date__left__col;
     top: -12%;
     /* border: #FF6D46 dashed 4px; */
 }
+
 .bottomsmiley {
     composes: date__right__col;
     top: 80%;
     /* border: #FF6D46 dashed 4px; */
 }
+
 .fun {
     height: 20%;
     width: 35%;
@@ -146,7 +171,8 @@
     /* background: #FF6D46; */
     /* border: #6249FF dashed 0.8px; */
 }
-.number{
+
+.number {
     font-family: 'CosHalavDfus';
     font-style: normal;
     font-weight: 400;
@@ -155,7 +181,7 @@
     letter-spacing: 0.02rem;
     color: #FBFFDA;
     transform: rotate(0.01deg);
-    
+
     position: relative;
     bottom: 5.5%;
     /* border: #6249FF dashed 0.5px; */
@@ -178,11 +204,13 @@
     top: 40%;
     /* border: #FF6D46 dashed 4px; */
 }
+
 .hours {
     composes: date__left__col;
     top: 51%;
     /* border: #FF6D46 dashed 4px; */
 }
+
 .minutes {
     composes: date__right__col;
     top: 60%;
