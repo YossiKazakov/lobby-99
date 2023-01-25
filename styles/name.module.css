@@ -21,7 +21,7 @@
 
 .inner{
     position: relative;
-    height: 90%;
+    height: 81%;
     width: 100%;
     max-width: 400px;
     /* border: green solid 3px; */
@@ -59,6 +59,7 @@
 .left1{
     composes: left__col;
     top: 0;
+    /* border: black solid 1px; */
 }
 .left2{
     composes: left__col;
@@ -87,6 +88,8 @@
 .right3{
     composes: right__col;
     top: 31%;
+    /* border: black solid 1px; */
+
 }
 .right4{
     composes: right__col;
@@ -125,7 +128,7 @@
 .textname {
     position: relative;
     margin-top: 6px;
-    width: 40%;
+    width: 43%;
     /* right: 5%; */
     /* maybe dont needed: */
     bottom: 2.5%;
@@ -141,20 +144,20 @@
     color: white;
 
     /* background: #FF6D46; */
-    /* border: #6249FF dashed 1px; */
+    /* border: #6249FF dashed 0.8px; */
 }
 .number{
     font-family: 'CosHalavDfus';
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     text-align: center;
     letter-spacing: 0.02rem;
     color: #FBFFDA;
     transform: rotate(0.01deg);
     
     position: relative;
-    bottom: 2.5%;
+    bottom: 5.5%;
     /* border: #6249FF dashed 0.5px; */
 }
 

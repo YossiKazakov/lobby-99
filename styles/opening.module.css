@@ -13,7 +13,7 @@
     position: absolute;
     height: 25%;
     width: 50%;
-
+    top: 30%;
     display: flex;
     justify-content: center;
     align-items: center;

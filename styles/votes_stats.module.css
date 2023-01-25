@@ -85,23 +85,23 @@
 }
 
 .innerPrecentage {
-    /* border: black solid 1px; */
+    /* border: black solid 0.2px; */
     margin-top: 3%;
     position: absolute;
     font-family: 'SimplerPro-Bold';
     color: rgb(80, 80, 80);
     z-index: 1;
-    font-size: 220%;
+    font-size: 240%;
 }
 
 .innerText {
-    /* border: black solid 1px; */
+    /* border: black solid 0.2px; */
     margin-top: 3%;
     position: absolute;
     font-family: 'SimplerPro-Bold';
     color: rgb(107, 83, 255);
     z-index: 1;
-    font-size: 200%;
+    font-size: 230%;
 }
 
 .firstArrow {

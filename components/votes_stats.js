@@ -22,10 +22,10 @@ export default function VotesStats() {
             </div>
             <div className={styles.whiteBackgroundOne}>
                 <Image src={WhiteBackground} alt='stats' fill />
-                <div className={styles.innerPrecentage} style={{right: '15%'}}>
+                <div className={styles.innerPrecentage} style={{right: '13%', top: '16%'}}>
                     {lastYear}
                 </div>
-                <div className={styles.innerText} style={{left: '15%'}}>
+                <div className={styles.innerText} style={{left: '13.5%', top: '13%'}}>
                     מהחברים
                 </div>
             </div>
@@ -39,10 +39,10 @@ export default function VotesStats() {
             </div>
             <div className={styles.whiteBackgroundTwo}>
                 <Image src={WhiteBackground} alt='stats' fill />
-                <div className={styles.innerPrecentage} style={{right: '8%'}}>
+                <div className={styles.innerPrecentage} style={{right: '6%', top: '17%'}}>
                     {lastVote}
                 </div>
-                <div className={styles.innerText} style={{left: '8%'}}>
+                <div className={styles.innerText} style={{left: '5.5%', top: '15%'}}>
                     מחברי הלובי
                 </div>
             </div>
@@ -56,10 +56,10 @@ export default function VotesStats() {
             </div>
             <div className={styles.whiteBackgroundThree}>
                 <Image src={WhiteBackground} alt='stats' fill />
-                <div className={styles.innerPrecentage} style={{right: '10%'}}>
+                <div className={styles.innerPrecentage} style={{right: '8%', top: '16%'}}>
                     {chosenVote}
                 </div>
-                <div className={styles.innerText} style={{left: '10%'}}>
+                <div className={styles.innerText} style={{left: '7.5%', top: '14%'}}>
                     מהמצביעים
                 </div>
             </div>
