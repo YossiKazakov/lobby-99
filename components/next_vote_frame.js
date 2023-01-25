@@ -64,7 +64,7 @@ export default function NextVote({ name, id }) {
                 <div className={styles.purpleStar}>
                     <RWebShare
                         data={{
-                            text: {shareText},
+                            text: shareText,
                             url: `https://lobby-delta.vercel.app/${id}`,
                             title: "לובי 99 - המקף שמחבר בין ההמון לשלטון",
                         }}
