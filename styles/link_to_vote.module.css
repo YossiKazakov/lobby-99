@@ -3,7 +3,7 @@
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background: #FFC4B5;
+    background: rgb(193, 193, 193);
     display: flex;
     justify-content: flex-end;
     align-items: center;
