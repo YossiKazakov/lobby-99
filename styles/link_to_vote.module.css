@@ -3,7 +3,7 @@
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background: rgb(193, 193, 193);
+    background: rgb(209, 207, 212);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -34,12 +34,18 @@
 }
 
 .bigtext {
+    position: absolute;
+    top: 0;
     font-weight: 900;
     font-size: 480%;
     line-height: 90%;
 }
 
 .text {
-    font-size: 200%;
+    /* border: green solid 0.5px; */
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    font-size: 190%;
     line-height: 109.5%;
 }

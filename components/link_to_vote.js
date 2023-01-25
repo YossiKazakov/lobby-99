@@ -11,12 +11,12 @@ export default function LinkToVote() {
                 <div className={styles.bigtext}>
                     זה הזמן
                     <br/>
-                    שלך
+                    <span style={{color: 'rgb(252, 101, 60)'}}>שלך</span>
                     <br/>
                     !להשפיע
                 </div>
                 <div ref={ref} className={styles.text}>
-                    לינק להצבעה ישלח אלייך כאשר ההצבעה תפתח
+                    לינק להצבעה ישלח אליך כשההצבעה תפתח
                 </div>
             </div>
         </div>
