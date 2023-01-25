@@ -5,8 +5,6 @@ import Image from 'next/image';
 
 import nameBg from '../images/name-frame/name-bg.svg';
 import fun from '../images/name-frame/how-much-fun.svg';
-import smileyLeft from '../images/name-frame/smiley-left.svg';
-import smileyRight from '../images/name-frame/smiley-right.svg';
 import smiley from '../images/name-frame/smileyy.svg';
 import yearsImg from '../images/name-frame/years.svg';
 import monthsImg from '../images/name-frame/months.svg';

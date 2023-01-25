@@ -6,7 +6,7 @@ import equalStar from '../images/stars/equal-star.svg';
 
 import styles from '../styles/equal.module.css';
 
-// This frame shows
+// This frame shows a message that evry vote is equal
 
 export default function Equal() {
     const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});

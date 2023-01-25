@@ -13,6 +13,7 @@
     transition-property: all;
     transition-delay: 0.35s;
     transition-duration: 1.2s;
+    overflow: hidden;
 }
 
 .bg {
@@ -21,7 +22,7 @@
 
 .inner{
     position: absolute;
-    top: 0;
+    top: -7.2%;
     height: 90%;
     width: 100%;
     max-width: 400px;

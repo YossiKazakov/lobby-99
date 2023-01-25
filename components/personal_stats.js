@@ -9,10 +9,9 @@ import TotalVotes from '../images/personal-stats-frame/votes_in_year.svg'
 import WowHappyToHear from '../images/personal-stats-frame/happy_hearing_you.svg'
 import HappyToHearMore from '../images/personal-stats-frame/happy_to_hear_more.svg'
 
-
+import { useInView } from 'react-intersection-observer';
 
 export default function PersonalStats({ numOfPersonalVotes }) {
-
     if (numOfPersonalVotes == 0) {
         return (
             <StillDidntVote />
@@ -27,34 +26,36 @@ export default function PersonalStats({ numOfPersonalVotes }) {
 }
 
 function StillDidntVote() {
+    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
     return (
         <div className={styles.container}>
-            <div className={styles.firstText}>
+            <div ref={ref} className={styles.firstText}>
                 עדיין לא השתתפת בהצבעות הלובי
             </div>
             <div className={styles.secondText}>
                 זו ההזדמנות שלנו לשמוע ממך
             </div>
-            <div className={styles.exclamationStar}>
-                <Image src={ExclamationStar} alt="!!" fill />
+            <div className={`${styles.exclamationStar} ${elementIsVisible ? styles.spin : ''}`}>
+                <Image src={ExclamationStar} alt="!" fill />
             </div>
         </div>
     )
 }
 
 function WishToHereMore({ numOfPersonalVotes, votedAllot }) {
+    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
     return (
         <div className={styles.container}>
-            <div className={styles.topText}>
+            <div ref={ref} className={styles.topText}>
                 <Image src={YouveParticipated} fill />
             </div>
-            <div className={styles.leftStar}>
+            <div className={`${styles.leftStar} ${elementIsVisible ? styles.spin : ''}`}>
                 <Image src={LeftStar} fill />
                 <div className={styles.textInLeftStar}>
                     {numOfPersonalVotes}
                 </div>
             </div>
-            <div className={styles.rightStar}>
+            <div className={`${styles.rightStar} ${elementIsVisible ? styles.spin : ''}`}>
                 <Image src={RightStar} fill />
                 <div className={styles.textInRightStar}>
                     {numOfVotes}
