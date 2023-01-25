@@ -1,14 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
-
 
 import styles from '../styles/member.module.css';
 
 import Opening from './opening_frame';
 import Intro1 from './intro1';
 import Intro2 from './intro2';
-
-
 import Name from './name';
 import Equal from './equal';
 import NextVote from './next_vote_frame';
@@ -30,7 +26,7 @@ export default function Member({ member }) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }, 1300);
     }, []);
-    console.log(member)
+    // console.log(member)
 
     return (
         <div className={styles.container}>

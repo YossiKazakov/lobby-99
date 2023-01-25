@@ -5,9 +5,8 @@
     width: 100%;
     background: #FFC4B5;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-
+    justify-content: flex-end;
+    align-items: center;
     transition-property: all;
     transition-delay: 0.35s;
     transition-duration: 1.2s;
@@ -16,32 +15,31 @@
 .bg {
     background: #FBFFDA;
 }
+.inner{
+    position: relative;
+    width: 80%;
+    height: 45%;
+    right: 7.2%;
+    bottom: 5%;
 
-.text {
-    /* border: #6B53FF solid 2px; */
-    position: absolute;
-    width: 85%;
-    height: 198px;
-    /* right: 10%; */
-    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     font-family: 'COLBO';
     font-style: normal;
-    /* font-weight: 900; */
-    font-size: 250%;
-    line-height: 109.5%;
-    /* or 44px */
-
     text-align: right;
     letter-spacing: 0.06em;
-
     color: #6B53FF;
 }
 
-.confetti{
-    /* border: #6B53FF solid 2px; */
-    position: absolute;
-    width: 90%;
-    height: 50%;
-    bottom: 0;
+.bigtext {
+    font-weight: 900;
+    font-size: 500%;
+    line-height: 90%;
+}
+
+.text {
+    font-size: 200%;
+    line-height: 109.5%;
 }

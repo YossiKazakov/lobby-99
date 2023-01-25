@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import subjectBg from '../images/subject-bg.svg'
-import subjectBtn from '../images/subject-btn.svg'
+import subjectBg from '../images/acts/subject-bg.svg'
+import subjectBtn from '../images/acts/subject-btn.svg'
 
 import styles from '../styles/acts.module.css';
 

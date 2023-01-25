@@ -3,8 +3,8 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
 import data from '../data/past-subjects.json'
-import clickHere from '../images/click.svg'
-import continueImg from '../images/continue.svg'
+import clickHere from '../images/acts/click.svg'
+import continueImg from '../images/acts/continue.svg'
 
 import Subject from './subject.js'
 import Modal from './modal.js';

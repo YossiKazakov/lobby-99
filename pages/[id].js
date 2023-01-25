@@ -11,16 +11,9 @@ const MemberDetails = ({ member }) => {
 };
 
 export const getStaticPaths = async () => {
-  // ****** default in case having troubles reading from the supabase
-  let paths = [
-    {
-      params: {
-        id: '1'
-      }
-    },
-  ];
-  // ****
-
+  // ****** default in case having troubles reading from the supabase, for offline presentation purpose
+  let paths = [{params: {id: '1'}},];
+  // ******
   const { data } = await client.from(MEMBERS_TABLE_NAME).select("id");
   if (data != null) {
     paths = data.map(({ id }) => ({
@@ -36,8 +29,9 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { id } }) => {
-  let member = { 'id': 1, 'name': 'עמית' }; // ****** default in case having troubles reading from the supabase 
-
+  // ****** default in case having troubles reading from the supabase, for offline presentation purpose
+  let member = {'id': 1, 'join_at': '2020-01-01T14:25:00', 'email': 'ok@gmail.com', 'name': 'עמית', 'last_vote': true, 'num_votes': 4};
+  // ******
   const { data } = await client.from(MEMBERS_TABLE_NAME)
     .select("*")
     .eq("id", id)

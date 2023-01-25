@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import exit from '../images/exit.svg'
-import one from '../images/one.svg'
-import two from '../images/two.svg'
-import three from '../images/three.svg'
+import exit from '../images/acts/exit.svg'
+import one from '../images/acts/one.svg'
+import two from '../images/acts/two.svg'
+import three from '../images/acts/three.svg'
 
 import styles from '../styles/modal.module.css';
 
