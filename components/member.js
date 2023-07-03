@@ -26,6 +26,8 @@ export default function Member({ member }) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }, 2000); //time passes by since first frame
     }, []);
+    // console.log(member)
+
     return (
         <div className={styles.container}>
             <div className={styles.frame}>
