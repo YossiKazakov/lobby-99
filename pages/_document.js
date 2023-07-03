@@ -8,6 +8,7 @@ export default function Document() {
     <Html>
       <Head>
         <meta property="og:title" content="סיכום שנה - לובי 99" />
+        <meta property="og:description" content="המקף שמחבר בין ההמון לשלטון" />
         <meta property="og:image" content="https://lobby-delta.vercel.app/lobbyImg.png" />
         <meta property="og:url" content="https://lobby-delta.vercel.app" />
         <meta property="og:type" content="website" />
