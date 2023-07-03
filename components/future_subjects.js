@@ -20,7 +20,7 @@ export default function FutureSubjects() {
                 <div className={styles.text}>
                     <AutoTextSize style={{alignSelf: 'center'}}
                         minFontSizePx={21}
-                        maxFontSizePx={35}
+                        maxFontSizePx={32}
                         fontSizePrecisionPx={0.1}>{futureSubject1}</AutoTextSize>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export default function FutureSubjects() {
                 <div className={styles.text}>
                     <AutoTextSize style={{alignSelf: 'center'}}
                         minFontSizePx={21}
-                        maxFontSizePx={35}
+                        maxFontSizePx={32}
                         fontSizePrecisionPx={0.1}>{futureSubject2}</AutoTextSize>
                 </div>
             </div>
@@ -38,7 +38,7 @@ export default function FutureSubjects() {
                 <div className={styles.text}>
                     <AutoTextSize style={{alignSelf: 'center'}}
                         minFontSizePx={21}
-                        maxFontSizePx={35}
+                        maxFontSizePx={32}
                         fontSizePrecisionPx={0.1}>{futureSubject3}</AutoTextSize>
                 </div>
             </div>
@@ -47,7 +47,7 @@ export default function FutureSubjects() {
                 <div className={styles.text}>
                     <AutoTextSize style={{alignSelf: 'center'}}
                         minFontSizePx={21}
-                        maxFontSizePx={35}
+                        maxFontSizePx={32}
                         fontSizePrecisionPx={0.1}>{futureSubject4}</AutoTextSize>
                 </div>
             </div>
