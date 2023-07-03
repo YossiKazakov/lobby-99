@@ -26,7 +26,7 @@ export default function PersonalStats({ numOfPersonalVotes }) {
 }
 
 function StillDidntVote() {
-    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
+    const { ref: ref, inView: elementIsVisible } = useInView({ triggerOnce: false });
     return (
         <div className={styles.container}>
             <div ref={ref} className={styles.firstText}>
@@ -43,7 +43,7 @@ function StillDidntVote() {
 }
 
 function WishToHereMore({ numOfPersonalVotes, votedAllot }) {
-    const { ref: ref, inView: elementIsVisible } = useInView({triggerOnce: true});
+    const { ref: ref, inView: elementIsVisible } = useInView({ triggerOnce: false });
     return (
         <div className={styles.container}>
             <div ref={ref} className={styles.topText}>
